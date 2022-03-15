@@ -12,4 +12,4 @@ Repositorio para el desarrollo del proyecto de la asignatura Usabilidad y Accesi
 
 * Joseph Gabino Rodríguez      | alu0101329161@ull.edu.es
 
-* Ian Vera Labrin              | alu0101333946@ull.e
+* Ian Vera Labrin              | alu0101333946@ull.es
