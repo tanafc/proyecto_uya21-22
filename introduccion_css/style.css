@@ -1,105 +1,213 @@
-/* Reseteamos valores de la página */
-* {
-    color: rgb(0, 0, 0);
-    list-style: Arial;
-		/* font-size: 1.5em; */
-} 
-li {
-    float: left;
-}
-li :hover {
-	background-color: red;
+/* Anchura fija definida 770px */
+body
+{
+    width: 770px;
+    margin: 0 auto;
 }
 
-header.cabecera {
-    background-color:rgb(192, 64, 231);
-    height: 100px;
-    width: 100%;
-    position: fixed;
-    
+#navigation 
+{
+    margin: auto;    
 }
 
-body {
-    margin-top: 10px;
-    width: 700px;
-    background-color: rgb(202, 202, 240);
+.nav
+{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  overflow: hidden;
+  height: 100px;
+
+  background-image: url(./img/diamante.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 800px 500px;
 }
 
-a {
+.nav input[type=text] {
+  float: right;
+  padding: 5px;
+  border: none;
+  margin-top: 15px;
+  margin-right: 16px;
+  font-size: 15px;
+}
+
+.nav ul
+{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+}
+
+/* Arial, color negro y tamaño 1.5em */
+.nav li a
+{
+    font-family: arial;
+    font-size: 1.5em;
     display: block;
-    color: rgb(43, 18, 18);
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-ul {
+.nav li a:hover
+{
+    background-color: white;
+}
+
+#pie-pagina
+{
+    border: 2px solid black;
+    margin-top: 25px;
+}
+
+#pie-pagina p
+{
+    font-size: 0.8em;
+    text-align: center;
+    font-family: Arial;
+}
+/* Todos los div dentro de container se ponen en columnas */
+#container
+{
+    display: flex;
+}
+
+#left-side
+{
+    width: 360px;
+    margin-top: 0.5em;
+    background-color: rgb(163, 253, 234);
+}
+
+#center-side
+{
+    width: 260px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    background-image: url();
+    margin-top: 0.5em;
+    background-color: bisque;
+}
+
+/* anchura columna de la derecha */
+
+#right-side
+{
+    width: 130px;
+    margin-top: 0.5em;
+    background-color: rgb(255, 255, 255);
+}
+
+#center-side a
+{
+    color: green;
+    text-decoration: none;
+
+}
+
+#center-side a:hover
+{
+    color: blue;
+}
+
+
+
+/* Aplico a las 3 columnas */
+#left-side, #center-side, #right-side
+{
+    border: 2px solid black;
+    height: 680px;
+    margin: auto;
+    /*margin-top: 25px;*/
+    text-align: center;
+}
+
+/* fotmateo texto */
+#left-side ul
+{
+    font-family: Arial;
+    font-size: 1.0em;
+    color: black;
+    
+}
+/* relleno = padding margen inferior = botton */
+#left-side li
+{
+    text-align: left;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 0.7em;
+    padding: 0.3em;
 }
-  
-h1 {
+
+/* Estado normal */
+#left-side a
+{
+    text-decoration: none;
+    color: green;
+}
+/* estado si passo por encima */
+#left-side a:hover
+{
     color: red;
-    font-family: Verdana;
-    font-size: 2.5em;
 }
-
-h2 {
+/* estado si ha sido visitado */
+#left-side a:visited
+{
+    font-family: Verdana;
+    color: blue;
+}
+/* estado si ha sido visitado y paso por encima */
+#left-side a:visited:hover
+{
     color: red;
+}
+
+#left-side img
+{
+  width: 100px;
+  height: auto;
+  display: center;
+}
+
+/* formateo de texto */
+#right-side table
+{
+    font-family: Arial;
+    font-size: 1.5em;
+    color: black;
+}
+/* espaciado hacia abajo */
+#right-side tr
+{
+    padding-bottom: 1.5em;
+}
+/* estado normal */
+#right-side a
+{
+    color: green;
+    text-decoration: none;
+}
+/* si paso por encima */
+#right-side a:hover
+{
+    color: blue;
+}
+/* si estan visitadas */
+#right-side a:visited
+{
     font-family: Verdana;
-    font-size: 1.0em;
+    color: green;
 }
-
-h3 {
-    color: red;
-    font-family: Verdana;
-    font-size: 1.0em;
-}
-/* 
-.navigationTest {
-  color: red;
-	background-color: red;
-  font-family: Verdana;
-  font-size: 1.0em;
-
-}
- */
-/* 
-#TablaPrueba tr td {
-  border: 1px solid #000;
-}
-#TablaPrueba tr td:first-child {
-  width: 380px;
-}
-#TablaPrueba tr td:nth-child(2) {
-  width: 260px;
-}
-#TablaPrueba tr td:last-child {
-  width: 130px;
-} */
-
-.container {
-	display: flex;
-	color: blue;
-}
-
-.right_column {
-    width: 130px; 
-    text-align: center;
-    background-color: rgb(192, 64, 231);
-    float: right;
-}
-
-.center_column {
-    height: auto;
-    text-align: center;
-    background-color:blueviolet;
-}
-
-.left_column {
-	text-align: center;
-    float: left;
-    width: 380px;
-    background-color:rgb(184, 51, 51)
+/* si estan visitadas y paso por encima */
+#right-side a:visited:hover
+{
+    color: blue;
 }

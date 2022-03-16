@@ -1,75 +1,105 @@
 <!DOCTYPE html>
-<html lang = "es"></html>
+<html>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./style.css" media="screen" />
+        <!-- ICONOS DE GITUHB -->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+        <!-- Fuentes Precargadas -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link href="style.css" rel="stylesheet">
         <title>Ruby's Flow</title>
     </head>
-    
-    <header class = cabecera>
-        <!-- Zona con texto principal -->
-        <div>
-            <!-- Bloque de navegacion -->
-            <div class = "navigationTest">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About</a></li>
-                </ul> 
-            </div>
-        </div>
-    </header>
-
     <body>
-        <div>
-            <table> 
-                <tr>
-                    <th>Tienda</th>
-                    <th>Número</th>
-                    <th>Localidad</th>
-                </tr>
-                <tr>
-                    <td>Ruby's Flow Valencia</td>
-                    <td>+34 922 60 50 41</td>
-                    <td>Espa&ntildea, Valencia</td>
-                </tr>
-                <tr>
-                    <td>Ruby's Flow Canarias</td>
-                    <td>+34 922 60 50 42</td>
-                    <td>Espa&ntildea, Santa Cruz de Tenerife</td>
-                </tr>
-                <tr>
-                    <td>Ruby's Flow Barcelona</td>
-                    <td>+34 922 60 50 43</td>
-                    <td>Espa&ntildea, Barcelona</td>
-                </tr>
-            </table>
-        </div>
-        <!-- Columnas -->
-        <div class="container">
-            <div class = "right_column">
-                <p>
-                    Esto es un texto para la columna derecha con 130px de ancho
-                </p>
-            </div>
-
-            <div class = "center_column">
-                <p>
-                    Esto es un texto para la columna central de ancho variable
-                </p>
-            </div>
-            <div class = "left_column">
-                <p>
-                    Esto es un texto para la columna izquierda con 380 px de ancho
-                </p>
-            </div>
-        </div>
-
-        <footer>
+        <!-- Barra de navegacion -->
+        <nav class="nav">
+            <ul id="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cesta de la Compra</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><input type="text" placeholder="Buscar..."></li>     
+            </ul>
+        </nav>
         
+        <div id="container">
+            <div id="left-side">
+                <h1>Ruby's Flow</h1>
+                <h2>Encuentra las joyas más exclusivas</h2>
+                <p>
+                    En nuestra tienda, encontrará los artículos más glamurosos y delicados.
+                </p>
+                <ul>
+                    <li><a href="#">Oro</a></li>
+                    <li><a href="#">Plata</a></li>
+                    <li><a href="#">Ruby</a></li>
+                    <li><a href="#">Top Ventas</a></li>
+                </ul>
+                <img src="./img/rosa.png">
+                
+                <h3>Dónde encontrarnos</h3>
+                <table border=1> 
+                    <tr>
+                        <th>Tienda</th>
+                        <th>Número</th>
+                        <th>Localidad</th>
+                    </tr>
+                    <tr>
+                        <td>Ruby's Flow Valencia</td>
+                        <td>+34 922 60 50 41</td>
+                        <td>Espa&ntildea, Valencia</td>
+                    </tr>
+                    <tr>
+                        <td>Ruby's Flow Canarias</td>
+                        <td>+34 922 60 50 42</td>
+                        <td>Espa&ntildea, Santa Cruz de Tenerife</td>
+                    </tr>
+                    <tr>
+                        <td>Ruby's Flow Barcelona</td>
+                        <td>+34 922 60 50 43</td>
+                        <td>Espa&ntildea, Barcelona</td>
+                    </tr>
+                </table>
+                
+                
+            </div>
+            <div id="center-side">
+                <table>
+                    <tr> 
+                        <td>¿Quiénes somos? Infórmate sobre nosotros <a href="#">aquí</a></td>
+                    </tr>
+                    <tr> 
+                        <td>¿Tienes dudas? <a href="#">Háznoslo saber</a></td>
+                    </tr>
+                    <tr> 
+                        <td>¿Dónde estamos? <a href="#">Encuéntranos</a></td>
+                    </tr>             
+                </table>
+                <img class="imagen-center" src="">
+            </div>
+            <div id="right-side">
+                <table>
+                    <tr>
+                        <td><a href="https://www.google.es/">Informacion Personal</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.aristocrazy.com/es/Home">Tiendas similares</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.aristocrazy.com/es/Home">Otras tiendas</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.aristocrazy.com/es/Home">Más ofertas</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <footer id="pie-pagina">
+            <p>Desarrollado por Tanausú, Joseph, Vlatko y Ian</p>
+            <a href="https://github.com/tanafc/proyecto_uya21-22">
+            github<i class="fa-globe"></i>
+            </a>
         </footer>
     </body>
 </html>
