@@ -89,7 +89,7 @@ body
 #center-side
 {
     width: 260px;
-    display: flex;
+    
     align-items: center;
     font-size: 1.5em;
     background-image: url();
@@ -210,4 +210,36 @@ body
 #right-side a:visited:hover
 {
     color: blue;
+}
+
+/* fotmateo texto */
+#center-side ul
+{
+    display: flex;
+    font-family: Arial;
+    font-size: 0.7em;
+    color: black;
+    
+}
+/* relleno = padding margen inferior = botton */
+#center-side li
+{
+    text-align: left;
+    list-style-type: none;
+    margin-bottom: 0.8em;
+    padding: 0.3em;
+}
+
+#center-side p
+{
+    font-size: 0.8em;
+    text-align: center;
+    font-family: Arial;
+}
+
+#left-side p
+{
+    font-size: 0.9em;
+    text-align: center;
+    font-family: Arial;
 }
