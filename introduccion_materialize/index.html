@@ -4,29 +4,80 @@
     <head>
       <!-- Compiled and minified CSS -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
       <!-- Compiled and minified JavaScript -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
        <!--centrar imágenes-->
       <style type="text/css">
         img { display:block; margin:auto;}
       </style>
+      <title>Usando Materialize</title>
     </head>
     <body>
 
       <!--Barra de navegación-->
       <nav>
         <div class="nav-wrapper purple darken-1">
-          <a href="#" class="brand-logo"><img src="images/LOGO.png" width="60"/></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+          <a href="#" class="brand-logo">
+            <i class="material-icons">code</i>
+            Creative
+          </a>
+
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+          <!--Barra de navegación PC-->
+          <ul class="right hide-on-med-and-down">
             <li><a href="#">Nft</a></li>
             <li><a href="#">Alquiler</a></li>
             <li><a href="#">Pujar</a></li>
-            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#" class="btn white black-text waves-effect waves-blue-grey lighten-1">Sobre nosotros</a></li>
           </ul>
+
+          <!--Barra de navegación Movil-->
+          <ul id="nav-mobile" class="sidenav">
+            <li><a href="#">Nft</a></li>
+            <li><a href="#">Alquiler</a></li>
+            <li><a href="#">Pujar</a></li>
+            <li><a href="#" class="btn black white-text waves-effect waves-blue-grey lighten-1">Sobre nosotros</a></li>
+          </ul>
+
         </div>
     </nav>
+
+  <!--Slider Inicio-->
+  <section class="slider">
+    <ul class="slides">
+      <li>
+        <img src="images/NFT3.JPG"> <!-- random image -->
+        <div class="caption center-align">
+          <h1>NFT Colecction</h3>
+          <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis suscipit odio, explicabo sapiente totam nesciunt.</h5>
+          <a href="#" class="btn btn-large white black-text waves-effect waves-grey">Pujar</a>
+        </div>
+      </li>
+      <li>
+        <img src="images/NFT2.JPG"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          <a href="#" class="btn btn-large white black-text waves-effect waves-grey">Pujar</a>
+        </div>
+      </li>
+      <li>
+        <img src="images/NFT1.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          <a href="#" class="btn btn-large white black-text waves-effect waves-grey">Pujar</a>
+        </div>
+      </li>
+
+    </ul>
+  </section>
 
     <!--Slider con indicadores-->
     <div class="container section">
@@ -89,8 +140,21 @@
     
     
     <!-------------------------------SCRIPTS------------------------------->
-    <!--Script del slider-->
+    <!--Script menu movil-->
     <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.slider');
+      var instances = M.Slider.init(elems, {
+        indicators: false,
+        height: 500,
+        duration: 500,
+        interval: 5000
+      })
+    });
     document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.carousel');
       var instances = M.Carousel.init(elems, {
