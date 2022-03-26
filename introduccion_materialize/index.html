@@ -4,9 +4,11 @@
     <head>
       <!-- Compiled and minified CSS -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <!-- Iconos favicon -->
       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
       <!-- Compiled and minified JavaScript -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <!-- Fuente Google -->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
@@ -52,7 +54,7 @@
   <section class="slider">
     <ul class="slides">
       <li>
-        <img src="images/NFT3.JPG"> <!-- random image -->
+        <img src="images/NFT3.JPG">
         <div class="caption center-align">
           <h1>NFT Colecction</h3>
           <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis suscipit odio, explicabo sapiente totam nesciunt.</h5>
@@ -60,7 +62,7 @@
         </div>
       </li>
       <li>
-        <img src="images/NFT2.JPG"> <!-- random image -->
+        <img src="images/NFT2.JPG">
         <div class="caption left-align">
           <h3>Left Aligned Caption</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
@@ -68,7 +70,7 @@
         </div>
       </li>
       <li>
-        <img src="images/NFT1.jpg"> <!-- random image -->
+        <img src="images/NFT1.jpg">
         <div class="caption right-align">
           <h3>Right Aligned Caption</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
@@ -92,15 +94,14 @@
 
     <!--Cartas con imágenes-->    
     <div class="row">
-      <div class="col s12 m6">
+      <div class="col s12 m12 l6">
         <div class="card horizontal">
           <div class="card-image">
               <img id="profile" src="images/NFT7.JPG">
           </div>
           <div class="card-stacked">
             <div class="card-content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id quidem voluptatum voluptate aspernatur, distinctio dicta! Expedita ad explicabo atque, nostrum nobis animi suscipit repudiandae, beatae aperiam, voluptatum modi. Eum?
-              </p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id quidem voluptatum voluptate aspernatur, distinctio dicta! Expedita ad explicabo atque, nostrum nobis animi suscipit repudiandae, beatae aperiam, voluptatum modi. Eum?</p>
             </div>
             <div class="card-action">
               <a href="#">Enlace a la compra</a>
@@ -130,17 +131,21 @@
 
     <!--Pie de pagina-->
     <footer class="page-footer purple darken-1">
+      <div class="social-container center">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
         <div class="footer-copyright">
-            <div class="container">
+            <div class="container center footer-text">
             © 2022 Copyright
             <a class="grey-text text-lighten-4 right" href="#!">About</a>
             </div>
         </div>
     </footer>
     
-    
-    <!-------------------------------SCRIPTS------------------------------->
-    <!--Script menu movil-->
+    <!--Script menu movil + slider + carrousel-->
     <script>
     document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.sidenav');
@@ -164,7 +169,8 @@
       });
     });
      </script>
-      
+     <!--Kit para las fuentes-->
+     <script src="https://kit.fontawesome.com/35db202371.js" crossorigin="anonymous"></script>
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>
     </body>
