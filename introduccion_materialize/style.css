@@ -4,9 +4,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .social-container a{
+}
+.social-container a{
     color:#ffff;
     font-size: 35px;
     margin:0px 20px;
-  }
+}
+
+.slider .btn{
+    margin-top: 20px;
+    padding:0 50px;
+    border-radius: 10px;
+  
+}
+.icon-block {
+    padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
