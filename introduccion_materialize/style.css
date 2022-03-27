@@ -30,7 +30,7 @@ img{
 }
 
 .carousel-slider{
-    height: 700px;
+    height: 50em;
 }
 
 .card-panel {
@@ -38,5 +38,5 @@ img{
 }
 
 .card img{
-    height: 397px;
+    height: 30em;
 }
