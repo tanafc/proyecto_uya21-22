@@ -28,3 +28,15 @@ img{
     object-position: top;
     width: 100px;
 }
+
+.carousel-slider{
+    height: 700px;
+}
+
+.card-panel {
+    opacity: 0.8;
+}
+
+.card img{
+    height: 397px;
+}
