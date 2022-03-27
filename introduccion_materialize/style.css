@@ -23,3 +23,8 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+img{
+    object-fit: cover;
+    object-position: top;
+    width: 100px;
+}

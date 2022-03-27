@@ -14,48 +14,59 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
       <link href="style.css" rel="stylesheet">
        <!--centrar imágenes-->
-      <style type="text/css">
-        img { display:block; margin:auto;}
-      </style>
       <title>Usando Materialize</title>
     </head>
     <body>
 
       <!--Barra de navegación-->
-      <nav>
-        <div class="nav-wrapper purple darken-1">
+    <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper purple darken-1">
+            <a href="#" class="brand-logo">
+              <i class="material-icons">code</i>
+              NFT collection
+            </a>
 
-          <a href="#" class="brand-logo">
-            <i class="material-icons">code</i>
-            NFT collection
-          </a>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
-          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <!--Barra de navegación PC-->
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#">Nft</a></li>
+              <li><a href="#">Alquiler</a></li>
+              <li><a href="#">Pujar</a></li>
+              <li><a href="#" class="btn white black-text waves-effect waves-blue-grey lighten-1">Sobre nosotros</a></li>
+            </ul>
 
-          <!--Barra de navegación PC-->
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#">Nft</a></li>
-            <li><a href="#">Alquiler</a></li>
-            <li><a href="#">Pujar</a></li>
-            <li><a href="#" class="btn white black-text waves-effect waves-blue-grey lighten-1">Sobre nosotros</a></li>
-          </ul>
+            <!--Barra de navegación Movil-->
+            <ul id="nav-mobile" class="sidenav">
+              <li><a href="#">Nft</a></li>
+              <li><a href="#">Alquiler</a></li>
+              <li><a href="#">Pujar</a></li>
+              <li><a href="#" class="btn black white-text waves-effect waves-blue-grey lighten-1">Sobre nosotros</a></li>
+            </ul>
+          </div>
+      </nav>
+    </div>
 
-          <!--Barra de navegación Movil-->
-          <ul id="nav-mobile" class="sidenav">
-            <li><a href="#">Nft</a></li>
-            <li><a href="#">Alquiler</a></li>
-            <li><a href="#">Pujar</a></li>
-            <li><a href="#" class="btn black white-text waves-effect waves-blue-grey lighten-1">Sobre nosotros</a></li>
-          </ul>
+    <!--Boton de accesibilidad-->
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large red">
+        <i class="large material-icons">mode_edit</i>
+      </a>
+      <ul>
+        <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+        <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+        <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+        <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+      </ul>
+    </div>
 
-        </div>
-    </nav>
 
   <!--Slider Inicio-->
   <section class="slider">
     <ul class="slides">
       <li>
-        <img src="images/NFT3.JPG">
+        <img class="responsive-img" src="images/NFT3.JPG">
         <div class="caption center-align">
           <h1>NFT Colecction</h3>
           <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis suscipit odio, explicabo sapiente totam nesciunt.</h5>
@@ -63,7 +74,7 @@
         </div>
       </li>
       <li>
-        <img src="images/NFT2.JPG">
+        <img class="responsive-img"  src="images/NFT2.JPG">
         <div class="caption left-align">
           <h3>Left Aligned Caption</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
@@ -71,7 +82,7 @@
         </div>
       </li>
       <li>
-        <img src="images/NFT1.jpg">
+        <img class="responsive-img" src="images/NFT1.jpg">
         <div class="caption right-align">
           <h3>Right Aligned Caption</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
@@ -85,11 +96,11 @@
     <!--Slider con indicadores-->
     <div class="container section">
           <div class="carousel carousel-slider">
-            <a class="carousel-item" href="#one!"><img src="images/NFT1.jpg"></a>
-            <a class="carousel-item" href="#two!"><img src="images/NFT2.JPG"></a>
-            <a class="carousel-item" href="#three!"><img src="images/NFT3.JPG"></a>
-            <a class="carousel-item" href="#four!"><img src="images/NFT4.JPG"></a>
-            <a class="carousel-item" href="#five!"><img src="images/NFT5.JPG"></a>
+            <a class="carousel-item" href="#one!"><img class="responsive-img" src="images/NFT1.jpg"></a>
+            <a class="carousel-item" href="#two!"><img class="responsive-img" src="images/NFT2.JPG"></a>
+            <a class="carousel-item" href="#three!"><img class="responsive-img" src="images/NFT3.JPG"></a>
+            <a class="carousel-item" href="#four!"><img class="responsive-img" src="images/NFT4.JPG"></a>
+            <a class="carousel-item" href="#five!"><img class="responsive-img" src="images/NFT5.JPG"></a>
           </div>
     </div>
 
@@ -111,7 +122,7 @@
         </div>
       </div>
 
-      <div class="col s12 m6">
+      <div class="col s12 m12 l6">
         <div class="card horizontal">
           <div class="card-image">
             <img id="profile" src="images/NFT7.JPG">
@@ -168,6 +179,10 @@
         indicators: true,
         full_width: true
       });
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems);
     });
      </script>
      <!--Kit para las fuentes-->
