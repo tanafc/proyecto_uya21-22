@@ -40,3 +40,11 @@ img{
 .card img{
     height: 30em;
 }
+
+.card h4{
+    font-size:2vw;
+}
+
+.card p{
+    font-size:1vw;
+}
