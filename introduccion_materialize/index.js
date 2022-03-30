@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const alert = document.getElementById('alert-com');
   const commentSection = document.getElementById('comment-section');
 
+
   function addCommentToCard() {
     if (comment.value === '') {
       alert.classList.remove('d-none');
