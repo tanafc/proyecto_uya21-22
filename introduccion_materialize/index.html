@@ -184,7 +184,7 @@
     <div class="row red lighten-1">
       <div class="col s12 m12 l12">
         <div class="center-align grey-text text-lighten-4">
-          <h5>Últimas ventas:</h5>
+          <h5>Últimas ventas de items:</h5>
         </div>
       </div>
     </div>
@@ -357,10 +357,11 @@
       </div>
     </div>
 
-    <blockquote>
-      <h5>Cantidad de elementos: párrafo, enlace y lista no ordenada</h5>
+    <!--Informe de la cantidad de párrafos, items de lista y elementos div en la página-->
+    <div class="container">
+      <blockquote>
+        <h5>Cantidad de elementos: párrafo, enlace y lista no ordenada</h5>
       </blockquote>
-  
       <a class="btn" id="button-contador">Contar elementos</a>
       <table class="responsive-table">
         <thead>
@@ -373,12 +374,34 @@
   
         <tbody>
           <tr>
-            <td> <span id="cantidadP"></span></td>
+            <td><span id="cantidadP"></span></td>
             <td><span id="cantidadLI"></span></td>
             <td><span id="cantidadDIV"></span></td>
           </tr>
         </tbody>
       </table>
+    </div>
+    
+    <!--Agregar el importe de las compras-->
+    <div class="container" id="sales-section">
+      <blockquote>
+        <h5>Importe de compras:</h5>
+      </blockquote>
+      <div class="row">
+        <div class="col s6 m6 l6">
+          <table class="striped" id="sales-table">
+            <thead>
+              <tr>
+                <th>Wallet</th>
+                <th>Amount</th>
+                <th>Payment Date</th>
+              </tr>
+            </thead>
+          </table>
+          <a class="btn" id="btn-amounts">Mostrar importes</a>
+        </div>
+      </div>
+    </div>
 
     <!--Pie de pagina-->
     <footer class="page-footer red lighten-1">
@@ -428,7 +451,6 @@
      <!--Kit para las fuentes-->
      <script src="https://kit.fontawesome.com/35db202371.js" crossorigin="anonymous"></script>
       <!--JavaScript at end of body for optimized loading-->
-      <script type="text/javascript" src="js/materialize.min.js"></script>
       <script src="./index.js"></script>
     </body>
   </html>
