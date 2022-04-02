@@ -5,6 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
   const alert = document.getElementById('alert-com');
   const commentSection = document.getElementById('comment-section');
 
+    /* Inicializamos variables */
+    document.getElementById("cantidadP").innerHTML = null;
+    document.getElementById("cantidadDIV").innerHTML = null;
+    document.getElementById("cantidadLI").innerHTML = null;
+    const btn1 = document.getElementById('button-contador');
+
 
   function addCommentToCard() {
     if (comment.value === '') {
@@ -22,4 +28,12 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   btn.onclick = addCommentToCard;
+
+  function countNumberElements(){
+    document.getElementById("cantidadP").innerHTML = document.getElementsByTagName("p").length;
+    document.getElementById("cantidadDIV").innerHTML = document.getElementsByTagName("div").length;
+    document.getElementById("cantidadLI").innerHTML = document.getElementsByTagName("li").length;  
+  }
+
+  btn1.onclick = countNumberElements;
 });
