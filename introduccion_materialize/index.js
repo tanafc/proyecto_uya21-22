@@ -6,10 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
   const commentSection = document.getElementById('comment-section');
 
     /* Inicializamos variables */
-    document.getElementById("cantidadP").innerHTML = null;
-    document.getElementById("cantidadDIV").innerHTML = null;
-    document.getElementById("cantidadLI").innerHTML = null;
-    const btn1 = document.getElementById('button-contador');
+  const reset = () => {
+  document.getElementById("cantidadP").innerHTML = null;
+  document.getElementById("cantidadDIV").innerHTML = null;
+  document.getElementById("cantidadLI").innerHTML = null;
+  }
+  const btn1 = document.getElementById('button-contador');
 
 
   function addCommentToCard() {
@@ -36,4 +38,5 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   btn1.onclick = countNumberElements;
+  btn1.onauxclick = reset;
 });
