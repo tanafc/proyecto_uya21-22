@@ -18,6 +18,38 @@
     <title>Register</title>
 </head>
 <body>
+
+        <!--Barra de navegación-->
+        <div class="navbar-fixed">
+          <nav>
+            <div class="nav-wrapper red lighten-1">
+              <a href="#" class="brand-logo">
+                <i class="material-icons">code</i>
+                Ruby's Crypto
+              </a>
+  
+              <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  
+              <!--Barra de navegación PC-->
+              <ul class="right hide-on-med-and-down">
+                <li><a href="#">Monedero Electrónico</a></li>
+                <li><a href="#">Tokens</a></li>
+                <li><a href="#">Leverage Bancario</a></li>
+                <li><a href="./register.html">Registrarse</a></li>
+                <li><a href="#" class="btn white black-text waves-effect waves-blue-grey lighten-1">Sobre nosotros</a></li>  
+              </ul>
+  
+              <!--Barra de navegación Móvil-->
+              <ul id="nav-mobile" class="sidenav">
+                <li><a href="#">Monedero Electrónico</a></li>
+                <li><a href="#">Tokens</a></li>
+                <li><a href="#">Leverage Bancario</a></li>
+                <li><a href="#" class="btn black white-text waves-effect waves-blue-grey lighten-1">Sobre nosotros</a></li>
+              </ul>
+            </div>
+        </nav>
+      </div>
+
     <div class="container">
         <div class="section">
           <div class=center>
@@ -27,7 +59,7 @@
             <form class="col s12 m12 l12">
               <div class="row">
                 <div class="input-field col s12 m6 l6">
-                  <input type="text" placeholder="Ingresa el nombre" id="nombre" class="validate" required>
+                  <input type="text" placeholder="Ingresa el dni" id="nombre" class="validate" required>
                 </div>
                 <div class="input-field col s12 m6 l6">
                   <input type="text" placeholder="Email" id="email" class="validate" required>
@@ -35,12 +67,12 @@
               </div>
               <div class="row">
                 <div class="input-field col s12 m12 l12">
-                  <input type="text" placeholder="Asunto del mensaje" id="asunto" class="validate" required>
+                  <input type="text" placeholder="Numero de cuenta" id="asunto" class="validate" required>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12 m12 l12">
-                  <textarea id="text_area" placeholder="Mensaje" class="materialize-textarea"></textarea>
+                  <textarea id="text_area" placeholder="Productos" class="materialize-textarea"></textarea>
                 </div>
               </div>
               <button class="btn-large waves-effect waves-teal purple darken-3" type="submit" name="action">Enviar<i class="material-icons right">send</i></button>
@@ -48,5 +80,23 @@
           </div>
         </div>
       </div>
+
+    <!--Pie de pagina-->
+    <footer class="page-footer red lighten-1">
+      <div class="social-container center">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+        <div class="footer-copyright">
+            <div class="container center footer-text">
+            © 2022 Copyright <br>
+            Una colaboración de Joseph Gabino, Ian Vera, Tanausú Falcón y Vlatko Marchán  
+            <a class="grey-text text-lighten-4 right" href="#!">About us</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
