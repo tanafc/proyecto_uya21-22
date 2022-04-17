@@ -8,6 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var year = $('#fecha_nacimiento').val();
     var location = $('#lugar_nacimiento').val();
     var email = $('#correo').val();
-    saveUserData(name, surname, year, location, email);
+    saveUserData(name, surname, email, year, location);
   });
 });
