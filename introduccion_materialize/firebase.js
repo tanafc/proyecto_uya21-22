@@ -27,7 +27,7 @@ export const db = getFirestore();
 
 export const saveUserData = (name, surname, email, year, location) => {
   console.log(name, surname, email, year, location);
-  
+  if(validacionTexto() & validacionEmail()) {
   addDoc(collection(db, 'users'), {
     name: name,
     surname: surname,
@@ -35,6 +35,9 @@ export const saveUserData = (name, surname, email, year, location) => {
     date_birth: year,
     place_birth: location
   });
+  } else {
+    console.log("Datos erroneos Solicitud denegada")  
+  }
 }
 
 export const getUsers = () => getDocs(collection(db, 'users'))

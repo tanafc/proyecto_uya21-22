@@ -1,7 +1,9 @@
 let data;
+console.log("Hola")
  document.querySelector('form')
     .addEventListener('submit', e => {
         e.preventDefault()
+        if(validacionTexto() & validacionEmail()) {
 
         data = Object.fromEntries(
             new FormData(e.target )
@@ -9,6 +11,9 @@ let data;
         alert(JSON.stringify(data))
         console.table(data)
         realizarPost();
+        } else {
+          console.log("Datos mal introducidos");
+        }
     })
 
     function realizarPost() {
@@ -26,21 +31,16 @@ let data;
 
 
     function validacionTexto()  {
-      var valor = $("#nombre_input").val();
+      var valor = $("#nombres").val();
       if( valor == null ||  valor.length == 0 || !/^[A-Z]+$/i.test(valor) ) {
         alert('ERROR: El nombre solo puede contener letras.');
         return false;
       }
-      var valor = $("#pago_input").val();
-      if( valor == null || valor.length == 0 || !/^[A-Z]+$/i.test(valor) ) {
-        alert('ERROR: El método de pago solo puede contener letras.');
-        return false;
-      }
-      return true;
+      return true
     }
       
     function validacionEmail()  {
-      var valor = $("#email_input").val();
+      var valor = $("#correo").val();
       if( valor == null || valor.length == 0 || !/^[^@]+@[^@]+.[a-zA-Z]{2,}$/.test(valor) ) {
         alert('ERROR: El formato del email es incorrecto.');
         return false
@@ -78,4 +78,13 @@ let data;
         return false;
       }
       return true
+    }
+
+    function validacionPago() {
+      var valor = $("#pago_input").val();
+      if( valor == null || valor.length == 0 || !/^[A-Z]+$/i.test(valor) ) {
+        alert('ERROR: El método de pago solo puede contener letras.');
+        return false;
+      }
+      return true;
     }
