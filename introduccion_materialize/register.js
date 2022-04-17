@@ -1,6 +1,8 @@
-import {saveUserData} from './firebase.js';
+import {saveUserData, getUsers, onGetUsers} from './firebase.js';
 
-document.addEventListener('DOMContentLoaded', function() {
+
+
+document.addEventListener('DOMContentLoaded', async function() {
   // Se espera el submit del formulario para actualizar la database
   $("#registro").submit(function() {
     var name = $('#nombres').val();
@@ -10,4 +12,19 @@ document.addEventListener('DOMContentLoaded', function() {
     var email = $('#correo').val();
     saveUserData(name, surname, email, year, location);
   });
+
+  const userTable = $("#User-table")[0];
+  
+  // Muestra los usuarios registrados
+  onGetUsers((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+      const user = doc.data();
+      const newRowAmount = userTable.insertRow();
+      newRowAmount.innerHTML = `
+        <td>${user.name}</td>
+        <td>${user.email}</td>
+      `;
+    });
+  });
+
 });

@@ -4,7 +4,9 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.2/firebase
 import {
   getFirestore,
   collection,
-  addDoc
+  addDoc,
+  getDocs,
+  onSnapshot
 } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -34,3 +36,7 @@ export const saveUserData = (name, surname, email, year, location) => {
     place_birth: location
   });
 }
+
+export const getUsers = () => getDocs(collection(db, 'users'))
+
+export const onGetUsers = (callback) => onSnapshot(collection(db, 'users'), callback)
