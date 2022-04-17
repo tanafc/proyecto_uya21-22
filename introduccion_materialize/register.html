@@ -16,6 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
     <!--AJAX-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link href="style.css" rel="stylesheet">
     <title>Register</title>
 </head>
@@ -25,7 +26,7 @@
         <div class="navbar-fixed">
           <nav>
             <div class="nav-wrapper red lighten-1">
-              <a href="#" class="brand-logo">
+              <a href="./index.html" class="brand-logo">
                 <i class="material-icons">code</i>
                 Ruby's Crypto
               </a>
@@ -58,7 +59,7 @@
             <div class="input-field col l6 col-m6">
               <i class="material-icons prefix">account_circle</i>
               <input type="text" name="nombres" id="nombres" required>
-              <label for="nombres">Nombres</label>
+              <label for="nombres">Nombre</label>
             </div>
             <div class="input-field col l6 col-m6">
               <i class="material-icons prefix">account_circle</i>
@@ -75,14 +76,14 @@
               <i class="material-icons prefix">directions</i>
               <input type="text" name="lugar_nacimiento" id="lugar_nacimiento" required>
               <label for="lugar_nacimiento">Lugar de nacimiento</label>
-            </div>>
+            </div>
             </div>
             <div class="clearfix"></div>
             <div class="input-field col l6 m6">
               <i class="material-icons prefix">email</i>
               <input type="email" name="correo" id="correo" class="validate">
               <label for="correo">Correo</label>
-              <span class="helper-text" data-error="Escriba un correo válido." data-success="Correo válido">Su correo es muy importante para contactarlo</span>
+              <span class="helper-text" data-error="Escriba un correo válido." data-success="Correo válido">Su correo es muy importante para contactarnos</span>
             </div>
             <div class="clearfix"></div>
             <br>
@@ -113,6 +114,7 @@
     </footer>
 
     <script src="./ajax.js"></script>
+    <script type="module" src="./register.js"></script>
 
 </body>
 </html>
