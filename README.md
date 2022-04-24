@@ -4,8 +4,8 @@ Repositorio para el desarrollo del proyecto de la asignatura Usabilidad y Accesi
 * __Introducción a CSS__: Componer una págia web según el diseño que se especifica en: https://docs.google.com/presentation/d/1tTSQXymti5gDmb1qaPhDaq7pa1bbw9WEUPfL6pzKeaw/edit?usp=sharing.
 * __Introducción a Materialize__: Diseñar un prototipo de página web de inicio para un sitio que muestre información respecto al proyecto que se desarrollará en la asignatura. 
 * __Introducción a Javascript__: Se propone una serie de ejercicios realizados bajo el directorio ./introduccion_materialize para el aprendizaje de JavaScript y el árbol DOM.
-* __Introducción a AJAX, jQuery y Firebase__: Se propone una serie de ejercicios realizados bajo el directorio ./introduccion_materialize
-
+* __Introducción a AJAX, jQuery y Firebase__: Se propone una serie de ejercicios realizados bajo el directorio ./introduccioc_ajax_firebase
+* __Introducción a WAI-ARIA__: Se propone añadir a la pagina de inicio elementos WAI-ARIA bajo el directorio ./introduccion_WAI-ARIA
 
 ## Autores:
 
