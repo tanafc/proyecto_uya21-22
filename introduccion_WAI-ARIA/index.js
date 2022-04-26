@@ -99,6 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     salesTable.style.display = "block";
     btnAmounts.style.display = "none";
+    btnAmounts.setAttribute('aria-expanded', true);
   }
 
   btn.onclick = addCommentToCard;
