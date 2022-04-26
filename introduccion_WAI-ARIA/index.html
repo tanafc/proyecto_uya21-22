@@ -35,7 +35,7 @@
               <li><a href="#">Tokens</a></li>
               <li><a href="#">Leverage Bancario</a></li>
               <li><a href="./register.html">Registrarse</a></li>
-              <li><a href="#" class="btn white black-text waves-effect waves-blue-grey lighten-1" role="button">Sobre nosotros</a></li>  <!--Agregamos elemnto a la tabulacion + role + label-->
+              <li><a href="#" class="btn white black-text waves-effect waves-blue-grey lighten-1" role="button" aria-label="Sobre Nosotros">Sobre nosotros</a></li>  <!--Agregamos elemnto a la tabulacion + role + label-->
             </ul>
 
             <!--Barra de navegación Móvil-->
@@ -253,12 +253,12 @@
       <div class="col s12 m3 l3">
         <div class="card">
           <div class="card-image">
-            <img class="responsive-img" id="profile" src="./images/ape1.JPG" alt="ape1">
+            <img class="responsive-img" id="profile" src="./images/ape1.JPG" alt="ape1" aria-labelledby="apes" aria-describedby="description_apes">
           </div>
           <div class="card-stacked">
             <div class="card-content">
-              <h2>Bored Apes</h2>
-              <p>Yuga Labs es la empresa matriz de Bored Ape Yacht Club. Visionarios del sector.</p>
+              <h2 id="apes">Bored Apes</h2>
+              <p id="description_apes">Yuga Labs es la empresa matriz de Bored Ape Yacht Club. Visionarios del sector.</p>
             </div>
             <div class="card-action">
               <a href="#">Cómo unirme</a>
@@ -270,12 +270,12 @@
       <div class="col s12 m3 l3">
         <div class="card">
           <div class="card-image">
-            <img class="responsive-img" id="profile" src="./images/golem1.png" alt="imagen de golem">
+            <img class="responsive-img" id="profile" src="./images/golem1.png" alt="imagen de golem" aria-labelledby="golems" aria-describedby="description_golems">
           </div>
           <div class="card-stacked">
             <div class="card-content">
-              <h2>Rude Golems</h2>
-              <p>Rude Golems es una propiedad intelectual. Son figuras de Golem.</p>
+              <h2 id="golems">Rude Golems</h2>
+              <p id="description_golems">Rude Golems es una propiedad intelectual. Son figuras de Golem.</p>
             </div>
             <div class="card-action">
               <a href="#">Cómo unirme</a>
@@ -287,12 +287,12 @@
       <div class="col s12 m3 l3">
         <div class="card">
           <div class="card-image">
-            <img class="responsive-img" id="profile" src="./images/lions1.jpg" alt="Imagen nft de lion">
+            <img class="responsive-img" id="profile" src="./images/lions1.jpg" alt="Imagen nft de lion" aria-labelledby="lions" aria-describedby="description_lions">
           </div>
           <div class="card-stacked">
             <div class="card-content">
-              <h2>Lazy Lions</h2>
-              <p>Comunidad NFT de leones únicos. Uno de los clubes más famosos</p>
+              <h2 id="lions">Lazy Lions</h2>
+              <p id="description_lions">Comunidad NFT de leones únicos. Uno de los clubes más famosos</p>
             </div>
             <div class="card-action">
               <a href="#">Cómo unirme</a>
@@ -304,12 +304,12 @@
       <div class="col s12 m3 l3">
         <div class="card">
           <div class="card-image">
-            <img class="responsive-img" id="profile" src="./images/punk.png" alt="punk">
+            <img class="responsive-img" id="profile" src="./images/punk.png" alt="punk" aria-labelledby="criptopunk" aria-describedby="description_criptopunk">
           </div>
           <div class="card-stacked">
             <div class="card-content">
-              <h2>CryptoPunks</h2>
-              <p>Uno de los primeros tokens no fungibles en la blockchain de Ethereum.</p>
+              <h2 id="criptopunk">CryptoPunks</h2>
+              <p id="description_criptopunk">Uno de los primeros tokens no fungibles en la blockchain de Ethereum.</p>
             </div>
             <div class="card-action">
               <a href="#">Cómo unirme</a>
@@ -327,7 +327,7 @@
         <form>  
           <div class="input-field">
             <i class="material-icons prefix">email</i>
-            <input id="email" type="email" class="validate" aria-required="true">
+            <input id="email" type="email" class="validate" aria-required="true" aria-label="Ingresar Email">
             <label for="email">Email</label>
           </div>
         </form>
@@ -355,7 +355,7 @@
 
         <div class="col s6 m6 l6">
           <h2>Comentarios:</h2>
-          <div id="user-comment"></div>
+          <div id="user-comment" aria-live="polite"></div>  <!--aria-live="polite" indica una región de constante actualización"-->
         </div>
       </div>
     </div>
