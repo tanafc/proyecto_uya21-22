@@ -30,7 +30,7 @@
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
             <!--Barra de navegación PC-->
-            <ul class="right hide-on-med-and-down">
+            <ul class="right hide-on-med-and-down" role="navigation">
               <li><a href="#">Monedero Electrónico</a></li>
               <li><a href="#">Tokens</a></li>
               <li><a href="#">Leverage Bancario</a></li>
@@ -190,7 +190,7 @@
         </div>
       </div>
     </div>
-    <div role="table" class="container center-align">
+    <div role="table" class="container center-align" aria-label="Últimos items vendidos">
       <div class="row">
         <div class="col s12 m12 l12">
           <table>  <!--role-->
@@ -235,7 +235,7 @@
               </tr>
             </tbody>
           </table>
-          <a class="btn waves-effect waves-light red lighten-1" href="#">Mirar más ventas</a>
+          <a class="btn waves-effect waves-light red lighten-1" role="button" href="#">Mirar más ventas</a>
         </div>
       </div>
     </div>    
@@ -327,7 +327,7 @@
         <form>  
           <div class="input-field">
             <i class="material-icons prefix">email</i>
-            <input id="email" type="email" class="validate">
+            <input id="email" type="email" class="validate" aria-required="true">
             <label for="email">Email</label>
           </div>
         </form>
@@ -365,8 +365,8 @@
       <blockquote>
         <h2>Cantidad de elementos: párrafo, enlace y lista no ordenada</h2>
       </blockquote>
-      <a class="btn" id="button-contador">Contar elementos</a>
-      <table class="responsive-table">
+      <a class="btn" id="button-contador" role="button">Contar elementos</a>
+      <table class="responsive-table" aria-label="Elementos de la página">
         <thead>
           <tr>
               <th>Cantidad Parrafos</th>
@@ -392,7 +392,7 @@
       </blockquote>
       <div class="row">
         <div class="col s6 m6 l6">
-          <table class="striped" id="sales-table">
+          <table class="striped" id="sales-table" aria-label="Ventas">
             <thead>
               <tr role="tablist"> <!--Role-->
                 <th>Wallet</th>
