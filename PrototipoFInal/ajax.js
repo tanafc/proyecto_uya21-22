@@ -88,18 +88,3 @@ console.log("Hola")
       }
       return true;
     }
-
-/** 
-    $.ajax({
-      url: 'https://jsonplaceholder.typicode.com/comments',
-      type: 'GET',
-      async: true,
-      data: $( "form" ).serializeArray(),
-      success: function (respuesta) {
-        $("#resultado").text(JSON.stringify(respuesta));
-      },
-      error: function () {
-        alert('ERROR: Se ha producido un error al realizar la petición del servicio.');
-      }
-    });
-*/
