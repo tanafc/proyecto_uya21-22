@@ -6,6 +6,7 @@ Repositorio para el desarrollo del proyecto de la asignatura Usabilidad y Accesi
 * __Introducción a Javascript__: Se propone una serie de ejercicios realizados bajo el directorio ./introduccion_materialize para el aprendizaje de JavaScript y el árbol DOM.
 * __Introducción a AJAX, jQuery y Firebase__: Se propone una serie de ejercicios realizados bajo el directorio ./introduccioc_ajax_firebase
 * __Introducción a WAI-ARIA__: Se propone añadir a la pagina de inicio elementos WAI-ARIA bajo el directorio ./introduccion_WAI-ARIA
+* __Prototipo Final__: Realización del prototipo final del proyecto.
 
 ## Autores:
 
