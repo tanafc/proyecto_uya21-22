@@ -38,7 +38,7 @@ ul.ventanas li a{
     padding: 30px 0px;
 }
 
-.active {
+.activar {
     background: #0984CC;
 }
 
@@ -88,5 +88,9 @@ ul.ventanas li a .tab-text{
 }
 
 blockquote h1 {
+    font-size: 2.5em;
+}
+
+.container h1 {
     font-size: 2.5em;
 }
