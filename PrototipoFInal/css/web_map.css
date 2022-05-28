@@ -36,9 +36,9 @@ li.bullet{
 .bullet::before {
     list-style-type: circle !important;
     content: "\2022";  
-    color: rgb(63, 63, 63); /* Change the color */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    color: rgb(63, 63, 63);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
 }
