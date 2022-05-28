@@ -1,8 +1,6 @@
   <!DOCTYPE html>
-  <html>
+  <html lang="es">
     <head>
-      <!-- Añadido el idioma -->
-      <html lang="es"></html>
       <!-- Compiled and minified CSS -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
       <!-- Iconos favicon -->
@@ -19,7 +17,8 @@
     <body>
 
       <!--Barra de navegación-->
-    <div class="navbar-fixed">
+    <header>
+    <div class="navbar-title">
         <nav role>
           <div class="nav-wrapper red lighten-1">
             <a href="./index.html" class="brand-logo">
@@ -27,7 +26,7 @@
               Ruby's Crypto
             </a>
 
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger" target="_self"><i class="material-icons">menu</i></a>
 
             <!--Barra de navegación PC-->
             <ul class="right hide-on-med-and-down" role="navigation">
@@ -41,7 +40,7 @@
             </ul>
 
             <!--Barra de navegación Móvil-->
-            <ul id="nav-mobile" class="sidenav">
+            <ul id="mobile-demo" class="sidenav">
               <li><a href="#">Monedero Electrónico</a></li>
               <li><a href="#">Noticias</a></li>
               <li><a href="#">Monedas</a></li>
@@ -51,6 +50,7 @@
           </div>
       </nav>
     </div>
+    </header>
 
     <!--Boton de accesibilidad-->
     <div class="fixed-action-btn">
@@ -430,6 +430,7 @@
       var elems = document.querySelectorAll('.sidenav');
       var instances = M.Sidenav.init(elems);
     });
+    
     document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.slider');
       var instances = M.Slider.init(elems, {
