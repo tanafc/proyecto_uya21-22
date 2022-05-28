@@ -10,7 +10,8 @@
         monthsShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
         weekdays: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
         weekdaysShort: ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'],
-        weekdaysAbbrev: ['D', 'L', 'M', 'X', 'J', 'V', 'S']
+        weekdaysAbbrev: ['D', 'L', 'M', 'X', 'J', 'V', 'S'],
+        cancel:	'Atrás',
       },
     });
 
@@ -25,7 +26,8 @@
         monthsShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
         weekdays: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
         weekdaysShort: ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'],
-        weekdaysAbbrev: ['D', 'L', 'M', 'X', 'J', 'V', 'S']
+        weekdaysAbbrev: ['D', 'L', 'M', 'X', 'J', 'V', 'S'],
+        cancel:	'Atrás',
       },
     });
 
