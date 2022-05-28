@@ -1,8 +1,6 @@
   <!DOCTYPE html>
-  <html>
+  <html lang="es">
     <head>
-      <!-- Añadido el idioma -->
-      <html lang="es"></html>
       <!-- Compiled and minified CSS -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
       <!-- Iconos favicon -->
@@ -19,6 +17,7 @@
     <body>
 
       <!--Barra de navegación-->
+    <header>
     <div class="navbar-fixed">
         <nav role>
           <div class="nav-wrapper red lighten-1">
@@ -27,7 +26,7 @@
               Ruby's Crypto
             </a>
 
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger" target="_self"><i class="material-icons">menu</i></a>
 
             <!--Barra de navegación PC-->
             <ul class="right hide-on-med-and-down" role="navigation">
@@ -39,18 +38,20 @@
               <li><a href="./register.html">Registrarse</a></li>
               <li><a href="./contacto.html" class="btn white black-text waves-effect waves-blue-grey lighten-1" role="button" aria-label="Sobre Nosotros">Sobre nosotros</a></li>  <!--Agregamos elemnto a la tabulacion + role + label-->
             </ul>
-
-            <!--Barra de navegación Móvil-->
-            <ul id="nav-mobile" class="sidenav">
-              <li><a href="#">Monedero Electrónico</a></li>
-              <li><a href="#">Noticias</a></li>
-              <li><a href="#">Monedas</a></li>
-              <li><a href="#">Leverage Bancario</a></li>
-              <li tabindex="0"><a href="#" class="btn black white-text waves-effect waves-blue-grey lighten-1" role="button" aria-label="Sobre Nosotros">Sobre nosotros</a></li>
-            </ul>
           </div>
       </nav>
     </div>
+    <div>
+      <!--Barra de navegación Móvil-->
+      <ul id="mobile-demo" class="sidenav">
+          <li><a href="#">Monedero Electrónico</a></li>
+          <li><a href="#">Noticias</a></li>
+          <li><a href="#">Monedas</a></li>
+          <li><a href="#">Leverage Bancario</a></li>
+          <li tabindex="0"><a href="#" class="btn black white-text waves-effect waves-blue-grey lighten-1" role="button" aria-label="Sobre Nosotros">Sobre nosotros</a></li>
+      </ul>
+    </div>
+    </header>
 
     <!--Boton de accesibilidad-->
     <div class="fixed-action-btn">
@@ -430,6 +431,7 @@
       var elems = document.querySelectorAll('.sidenav');
       var instances = M.Sidenav.init(elems);
     });
+    
     document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.slider');
       var instances = M.Slider.init(elems, {
