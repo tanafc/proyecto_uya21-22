@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', async function() {
+
   $(document).ready(function(){
     $('#date-from').datepicker({
       format: 'dd/mm/yyyy',
@@ -13,9 +13,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         weekdaysAbbrev: ['D', 'L', 'M', 'X', 'J', 'V', 'S']
       },
     });
-  });
 
-  $(document).ready(function(){
     $('#date-to').datepicker({
       format: 'dd/mm/yyyy',
       firstDay: 1,
@@ -30,9 +28,42 @@ document.addEventListener('DOMContentLoaded', async function() {
         weekdaysAbbrev: ['D', 'L', 'M', 'X', 'J', 'V', 'S']
       },
     });
-  });
 
-  $(document).ready(function() {
     $('input#input_title, input#input_description').characterCounter();
+
+    $('#nft-check').change(function() {
+      const isChecked = $('#nft-check').is(':checked');
+      if (isChecked) {
+        $('#nft-check').attr('aria-checked', 'true');
+      } else {
+        $('#nft-check').attr('aria-checked', 'false');
+      }
+    });
+
+    $('#coin-check').change(function() {
+      const isChecked = $('#coin-check').is(':checked');
+      if (isChecked) {
+        $('#coin-check').attr('aria-checked', 'true');
+      } else {
+        $('#coin-check').attr('aria-checked', 'false');
+      }
+    });
+
+    $('#game-check').change(function() {
+      const isChecked = $('#game-check').is(':checked');
+      if (isChecked) {
+        $('#game-check').attr('aria-checked', 'true');
+      } else {
+        $('#game-check').attr('aria-checked', 'false');
+      }
+    });
+
+    $('#social-check').change(function() {
+      const isChecked = $('#social-check').is(':checked');
+      if (isChecked) {
+        $('#social-check').attr('aria-checked', 'true');
+      } else {
+        $('#social-check').attr('aria-checked', 'false');
+      }
+    });
   });
-});
