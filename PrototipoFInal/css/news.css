@@ -6,3 +6,20 @@
   font-size: 25px;
   color: black;
 }
+
+.read-more {
+  font-size: 20px;
+  color: orange;
+}
+
+.news-banner {
+  font-size: 40px;
+}
+
+.news-title {
+  font-size: 30px;
+}
+
+.news-text {
+  font-size: 10px;
+}

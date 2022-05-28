@@ -1,7 +1,5 @@
 import {saveUserData, getUsers, onGetUsers} from './firebase.js';
 
-
-
 document.addEventListener('DOMContentLoaded', async function() {
   // Se espera el submit del formulario para actualizar la database
   $("#registro").submit(function() {
