@@ -21,7 +21,12 @@
 }
 
 .news-text {
-  font-size: 10px;
+  font-size: 18px !important;
+}
+
+.card-image {
+  height: 400px;
+  overflow: hidden;
 }
 
 #formato-fecha {
