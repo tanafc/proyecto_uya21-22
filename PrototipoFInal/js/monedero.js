@@ -44,19 +44,20 @@ $(document).ready(function () {
             nombreMoneda: `${nombreMoneda}`,
             cantidad: `${cantidad}`,
         }
-        console.log("B")
         if (flag) {
-            console.log("C")
+            $("#confirmed-transaction").empty()
             $("#confirmed-transaction").append("La transacción se ha completado con éxito.");
-            const divisas = $("#divisas-tabla")[0];
-            const newRowAmount = divisas.insertRow();
-            newRowAmount.innerHTML = `
-                <td>${objeto.nombreMoneda}</td>
-                <td>${objeto.cantidad}</td>
-                <td>${clasifyPrice(objeto.nombreMoneda)}</td>
+            let content = `
+                <tr tabindex="0">
+                    <td>${objeto.nombreMoneda}</td>
+                    <td>${objeto.cantidad}</td>
+                    <td>${clasifyPrice(objeto.nombreMoneda)}</td>
+                </tr>
             `;
+            $("#tBody").append(content);
         } else {
-            $("#confirmed-transaction").append("Error.");
+            $("#confirmed-transaction").empty()
+            $("#confirmed-transaction").append("Error, en la introducción de los datos");
         }
     });
 });

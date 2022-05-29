@@ -87,19 +87,21 @@
             <article id="tab1">
                 <!--Mostrar divisas-->
                 <div class="tabladivisas" id="DivisasContainer">
-                    <blockquote>
-                        <h1>Divisas:</h1>
+                    <blockquote tabindex="0">
+                        <h1>Activos en el monedero:</h1>
                     </blockquote>
                     <div class="row">
                         <div class="divisas">
                             <table class="striped" id="divisas-tabla">
                                 <thead>
-                                    <tr>
+                                    <tr tabindex="0">
                                         <th>Nombre cripto activo</th>
                                         <th>Numero monedas</th>
                                         <th>precio mercado (Euros)</th>
                                     </tr>
                                 </thead>
+                                <tbody id = "tBody">
+                                </tbody>
                             </table>
                         </div>
                     </div>
@@ -108,7 +110,7 @@
             <article id="tab2">
                 <div class="col s6 m6 l6">
                     <div class="container">
-                        <blockquote>
+                        <blockquote tabindex="0">
                             <h1>Añadir una nueva cripto</h1>
                         </blockquote>
                         <p id="confirmed-transaction"></p>
