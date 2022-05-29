@@ -19,36 +19,40 @@
     <title>Mapa web</title>
 </head>
 <body>
-    <!--Barra de navegación-->
-    <div class="navbar-fixed">
+      <!--Barra de navegación-->
+      <header>
+        <div class="navbar-fixed">
             <nav role>
               <div class="nav-wrapper red lighten-1">
-                <a href="#" class="brand-logo">
+                <a href="./index.html" class="brand-logo">
                   <i class="material-icons">code</i>
                   Ruby's Crypto
                 </a>
     
-                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger" target="_self"><i class="material-icons">menu</i></a>
     
                 <!--Barra de navegación PC-->
                 <ul class="right hide-on-med-and-down" role="navigation">
-                  <li><a href="#">Monedero Electrónico</a></li>
+                  <li><a href="./monedero.html">Monedero Electrónico</a></li>
+                  <li><a href="./news.html">Noticias</a></li>
+                  <li><a href="#">Monedas</a></li>
                   <li><a href="#">Tokens</a></li>
                   <li><a href="#">Leverage Bancario</a></li>
                   <li><a href="./register.html">Registrarse</a></li>
-                  <li><a href="#" class="btn white black-text waves-effect waves-blue-grey lighten-1" role="button" aria-label="Sobre Nosotros">Sobre nosotros</a></li>  <!--Agregamos elemnto a la tabulacion + role + label-->
-                </ul>
-    
-                <!--Barra de navegación Móvil-->
-                <ul id="nav-mobile" class="sidenav">
-                  <li><a href="#">Monedero Electrónico</a></li>
-                  <li><a href="#">Tokens</a></li>
-                  <li><a href="#">Leverage Bancario</a></li>
-                  <li tabindex="0"><a href="#" class="btn black white-text waves-effect waves-blue-grey lighten-1" role="button" aria-label="Sobre Nosotros">Sobre nosotros</a></li>
+                  <li><a href="./contacto.html" class="btn white black-text waves-effect waves-blue-grey lighten-1" role="button" aria-label="Sobre Nosotros">Sobre nosotros</a></li>  <!--Agregamos elemnto a la tabulacion + role + label-->
                 </ul>
               </div>
           </nav>
-    </div>
+        </div>
+        <div>
+          <!--Barra de navegación Móvil-->
+          <ul id="mobile-demo" class="sidenav" tabindex="-1">
+              <li><a aria-expanded="false" tabindex="-1" target="_self" href="./monedero.html">Monedero Electrónico</a></li>
+              <li><a aria-expanded="false" tabindex="-1" target="_self" href="./news.html">Noticias</a></li>
+              <li tabindex="0"><a aria-expanded="false" tabindex="-1" target="_self" href="./contacto.html" class="btn black white-text waves-effect waves-blue-grey lighten-1" role="button" aria-label="Sobre Nosotros">Sobre nosotros</a></li>
+          </ul>
+        </div>
+      </header>
     
     <!-- Breadcrumbs -->
     <div class="container">
@@ -72,7 +76,7 @@
           <li class="bullet"><a href="contacto.html" title="Contacto" target="_self" tabindex="13">Contacto</a></li>
           <li class="bullet"><a href="monedero.html" title="Monedero" target="_self" tabindex="14">Monedero</a></li>
           <li class="bullet"><a href="register.html" title="Registro" id="link_menu_events" target="_self" tabindex="15">Registro</a></li>
-          <li class="bullet"><a href="" title="Accesibilidad" target="_self" tabindex="20">Accesibilidad</a></li>
+          <li class="bullet"><a href="accessibility.html" title="Accesibilidad" target="_self" tabindex="20">Accesibilidad</a></li>
           <li class="bullet"><a href="web_map.html" title="Mapa web" target="_self" tabindex="21">Mapa web</a></li>
         </ul>
       </div>
@@ -94,11 +98,12 @@
                 </div>
                 <div class="col s12 m5 l4 offset-l2">
                   <h5 class="teal-text text-lighten-4" tabindex="25"><b>Redes sociales</b></h5>
-                  <ul>
-                    <li><img src="images/Facebook.png" alt="Imagen de logo de Facebook" width="25" height="25" tabindex="26"><a class="grey-text text-lighten-3" href="https://www.facebook.com/universidaddelalaguna" target="_blank" tabindex="27">Facebook</a></li>
-                    <li><img src="images/Twitter.png" alt="Imagen de logo de Twitter" width="25" height="25" tabindex="28"><a class="grey-text text-lighten-3" href="https://twitter.com/ULL" target="_blank" tabindex="29">Twitter</a></li>
-                    <li><img src="images/LinkedIn.png" alt="Imagen de logo de LinkedIn" width="25" height="25" tabindex="30"><a class="grey-text text-lighten-3" href="https://www.linkedin.com/school/universidad-de-la-laguna" target="_blank" tabindex="31">LinkedIn</a></li>
-                  </ul>
+                  <div class="social-container center">
+                    <a href="https://www.facebook.com/universidaddelalaguna" target="_blank" tabindex="44" aria-label="Link para compartir en Facebook"><i class="fab fa-facebook-square" ></i></a>
+                    <a href="https://twitter.com/ULL" tabindex="45" target="_blank" aria-label="Link para compartir en Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/ULL" tabindex="46"  target="_blank" aria-label="Link para compartir en Twitter"><i class="fab fa-twitter" ></i></a>
+                    <a href="https://www.linkedin.com/school/universidad-de-la-laguna" tabindex="47" target="_blank" aria-label="Link para compartir en youtube"><i class="fab fa-youtube" ></i></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -115,6 +120,17 @@
                 </div>
               </div>
             </div>
-    </footer>  
+    </footer>
+    
+      <!--  Menu Movil dinamico-->
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+         var elems = document.querySelectorAll('.sidenav');
+         var instances = M.Sidenav.init(elems);
+        });
+      </script>
+      
+      <!--  Scripts FAVICON-->
+     <script src="https://kit.fontawesome.com/35db202371.js" crossorigin="anonymous"></script>
 </body>
 </html>
