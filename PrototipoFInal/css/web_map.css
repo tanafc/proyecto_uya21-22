@@ -42,3 +42,16 @@ li.bullet{
     width: 1em;
     margin-left: -1em;
 }
+
+.social-container{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-container a{
+    color:#ffff;
+    font-size: 35px;
+    margin:0px 20px;
+}

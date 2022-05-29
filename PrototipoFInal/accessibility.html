@@ -19,7 +19,7 @@
     <title>Accesibilidad</title>
 </head>
 <body>
-      <!--Barra de navegación-->
+      <!--Barra de navegación PC-->
       <header>
         <div class="navbar-fixed">
             <nav role>
@@ -58,8 +58,8 @@
 
     <!--Boton de accesibilidad-->
     <div class="fixed-action-btn">
-        <a href="./accessibility.html" target="_self" class="btn-floating btn-large red pulse">
-            <i tabindex="51" role="button" target="_self" class="large material-icons">arrow_upward</i> <!--role + index-->
+        <a href="./accessibility.html" role="button" target="_self" class="btn-floating btn-large red pulse">
+            <i tabindex="51" class="large material-icons">arrow_upward</i>
         </a>
     </div>
 
@@ -78,6 +78,7 @@
     </div>
     <!-- Fin Breadcrumbs -->
 
+    <!--Contenido-->
     <div class="container box white">
         <div class="row">
           <div class="col s12 m12 l12">
@@ -170,6 +171,7 @@
         </div>
       </div>
     </main>
+    <!--Fin Contenido-->
 
     <!-- Footer -->
     <footer class="page-footer red lighten-2">
@@ -210,7 +212,7 @@
         </div>
       </footer>
 
-      <!--  Menu Movil-->
+      <!--  Menu Movil dinamico-->
       <script>
         document.addEventListener('DOMContentLoaded', function() {
          var elems = document.querySelectorAll('.sidenav');
