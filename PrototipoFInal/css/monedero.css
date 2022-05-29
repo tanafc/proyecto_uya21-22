@@ -10,6 +10,9 @@ body{
     background: #d4d4d4;
     font-family: 'Gregoria';
 }
+p {
+    font-size: 1.6em;
+}
 
 .wrap {
     width: 80%;
