@@ -26,6 +26,7 @@
 
 .card-image {
   height: 400px;
+  width: auto;
   overflow: hidden;
 }
 
