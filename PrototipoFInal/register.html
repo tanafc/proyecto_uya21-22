@@ -14,8 +14,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-    <!--AJAX-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
     <link href="./css/style.css" rel="stylesheet">
@@ -58,19 +57,21 @@
       </div>
 
       <div class="container white"> <!-- CONTAINER -->
-        <h1>Registrarse</h1>
-        <p class="flow-text">¡Regístrate y únete a la expansiva comunidad del cripto!</p>
+        <h1 tabindex="0">Registrarse</h1>
+        <p tabindex="0" class="flow-text">¡Regístrate y únete a la expansiva comunidad del cripto!</p>
         <div class="row"> <!-- ROW -->
           <form method="post" id="registro">
             <div class="input-field col l6 col-m6">
               <i class="material-icons prefix">account_circle</i>
-              <input type="text" name="nombres" id="nombres" required>
+              <input type="text" name="nombres" id="nombres" aria-label="Nombre del usuario" required>
               <label for="nombres">Nombre</label>
+              <p class="red-text text-darken-3" id="errorNombre"></p>
             </div>
             <div class="input-field col l6 col-m6">
               <i class="material-icons prefix">account_circle</i>
-              <input type="text" name="apellidos" id="apellidos" required>
+              <input type="text" name="apellidos" id="apellidos" aria-label="Apellido del usuario" required>
               <label for="apellidos">Apellidos</label>
+              <p class="red-text text-darken-3" id="errorApellido"></p>
             </div>
             <div class="clearfix"></div>
             <div class="input-field col l6 col-m6">
@@ -80,16 +81,17 @@
             </div>
             <div class="input-field col l6 col-m6">
               <i class="material-icons prefix">directions</i>
-              <input type="text" name="lugar_nacimiento" id="lugar_nacimiento" required>
+              <input type="text" name="lugar_nacimiento" id="lugar_nacimiento" aria-label="Lugar de nacimiento" required>
               <label for="lugar_nacimiento">Lugar de nacimiento</label>
+              <p class="red-text text-darken-3" id="errorNacimiento"></p>
             </div>
             </div>
             <div class="clearfix"></div>
             <div class="input-field col s12 l12 m12">
               <i class="material-icons prefix">email</i>
-              <input type="email" name="correo" id="correo" class="validate">
+              <input type="text" name="correo" id="correo" aria-label="Correo electrónico">
               <label for="correo">Correo</label>
-              <span class="helper-text" data-error="Escriba un correo válido." data-success="Correo válido">Su correo es muy importante para contactarnos</span>
+              <p class="red-text text-darken-3" id="errorCorreo"></p>
             </div>
             <div class="center-align">
               <button role="button" type="submit" class="btn waves-effect">
@@ -123,25 +125,57 @@
 
     <!--Pie de pagina-->
     <footer class="page-footer red lighten-1">
-      <div class="social-container center">
-        <a href="#" aria-label="Link para compartir en Facebook"><i class="fab fa-facebook-square" ></i></a>
-        <a href="#" aria-label="Link para compartir en Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" aria-label="Link para compartir en Twitter"><i class="fab fa-twitter" ></i></a>
-        <a href="#" aria-label="Link para compartir en youtube"><i class="fab fa-youtube" ></i></a>
-      </div>
-        <div class="footer-copyright">
-            <div class="container center footer-text" aria-label="Copyright 2022 Una colaboración de Joseph Gabino, Ian Vera, Tanausú Falcón y Vlatko Marchán">
-            © 2022 Copyright <br>
-            Una colaboración de Joseph Gabino, Ian Vera, Tanausú Falcón y Vlatko Marchán  
-            <a class="grey-text text-lighten-4 right" href="#!">About us</a>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m7 l6 center-align">
+            <h5 class="teal-text text-lighten-5" tabindex="20"><b>Colaboradores</b></h5>
+            <ul>
+              <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="21">Joseph Gabino Rodríguez</a></li>
+              <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="22">Vlatko Jesús Marchán Sekulic</a></li>
+              <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="23">Tanausú Falcón Casanova</a></li>
+              <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="24">Ian Vera Labrin</a></li>
+            </ul>
+          </div>
+          <div class="col s12 m5 l4 center-align">
+            <h5 class="teal-text text-lighten-5" tabindex="25"><b>Redes sociales</b></h5>
+            <div class="social-container center">
+              <a href="https://www.facebook.com/universidaddelalaguna" target="_blank" tabindex="26" aria-label="Link para compartir en Facebook"><i class="fab fa-facebook-square" ></i></a>
+              <a href="https://twitter.com/ULL" tabindex="27" target="_blank" aria-label="Link para compartir en Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com/ULL" tabindex="28"  target="_blank" aria-label="Link para compartir en Twitter"><i class="fab fa-twitter" ></i></a>
+              <a href="https://www.linkedin.com/school/universidad-de-la-laguna" tabindex="29" target="_blank" aria-label="Link para compartir en youtube"><i class="fab fa-youtube" ></i></a>
             </div>
+          </div>      
         </div>
+      </div>
+      <div class="footer-copyright teal-text text-lighten-4">
+        <div class="container">
+          <div class="row"> 
+            <div class="col s12 m5 l5 center-align" tabindex="32">
+              © 2022 Copyright
+            </div>
+            <div class="col s12 m7 l7">
+              <a class="teal-text text-lighten-5" href="./accessibility.html" target="_self" tabindex="33">Accesibilidad</a>
+              <a class="right teal-text text-lighten-5" href="./web_map.html" target="_self" tabindex="34">Mapa web</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
+
+
     <!--Kit para las fuentes-->
     <script src="https://kit.fontawesome.com/35db202371.js" crossorigin="anonymous"></script>
     <!--JavaScript at end of body for optimized loading-->
     <script src="./js/ajax.js"></script>
     <script type="module" src="./js/register.js"></script>
-
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <script>
+    $(document).ready(function(){
+      $('.datepicker').datepicker();
+    });
+    </script>
+    <!--AJAX-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 </html>
