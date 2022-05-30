@@ -135,15 +135,15 @@
     <!--Mostrar usuarios-->
     <div class="container" id="User-Container">
       <blockquote>
-        <h2>Usuarios registrados:</h2>
+        <h2 tabindex="0">Usuarios registrados:</h2>
       </blockquote>
-      <div class="row">
+      <div class="row" aria-live="polite">
         <div class="col s6 m6 l6">
-          <table class="striped" id="User-table">
-            <thead>
+          <table role="table" class="striped" id="User-table">
+            <thead tabindex="0">
               <tr>
-                <th>Name</th>
-                <th>Email</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
               </tr>
             </thead>
           </table>
