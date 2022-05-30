@@ -36,7 +36,7 @@ export const saveUserData = (name, surname, email, year, location) => {
     place_birth: location
   });
   } else {
-    console.log("Datos erroneos Solicitud denegada")  
+    console.log("Datos erroneos: Solicitud denegada")  
   }
 }
 

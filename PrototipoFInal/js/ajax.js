@@ -1,5 +1,4 @@
 let data;
-console.log("Hola")
  document.querySelector('form')
     .addEventListener('submit', e => {
         e.preventDefault()
