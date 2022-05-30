@@ -25,7 +25,7 @@
     <div class="navbar-fixed">
       <nav role>
         <div class="nav-wrapper red lighten-1">
-          <a href="./index.html" class="brand-logo">
+          <a tabindex="0" href="./index.html" class="brand-logo">
             <i class="material-icons" aria-hidden="true">code</i>
             Ruby's Crypto
           </a>
@@ -65,32 +65,23 @@
   <!--Botón de accesibilidad-->
   <div class="fixed-action-btn">
     <a href="#" class="btn-floating btn-large grey darken-3 pulse" role="button" aria-label="Subir arriba">
-      <i tabindex="1" role="button" class="large material-icons" aria-hidden="true">arrow_upward</i>
-      <!--role + index-->
+      <i tabindex="0" role="button" class="large material-icons" aria-hidden="true">arrow_upward</i>
     </a>
   </div>
 
-
-  <!--Slider Inicio-->
-  <section role="marquee" aria-live="off" class="slider">
-    <!--Elemento que va cambiando sin interaccion no tienen importancia-->
-    <ul class="slides">
-      <li>
-        <img class="responsive-img" src="./images/cripto1.png" alt="cripto1">
-        <div class="caption center-align">
-          <div class="card-panel grey darken-3">
-            <h1>Últimas tendencias</h1>
-            <h2 class="light grey darken-3 text-lighten-3">¿Mercado en tendencia ascendente? ¿O sólo rumores?</h2>
-            <a href="./news.html" class="btn btn-large white black-text waves-effect waves-grey">Leer</a>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-
   <div class="parallax-container">
-    <div class="parallax"><img src="images/cripto1.png"></div>
+    <div tabindex="0" class="parallax"><img class="responsive-img" src="images/cripto1.png"
+        aria-label="Imagen de Criptomoneda"></div>
+    <div class="caption center-align">
+      <div class="card-panel grey darken-3">
+        <element tabindex="0">
+          <h1>Últimas tendencias</h1>
+          <h2 class="black-text darken-5 text-lighten-4">¿Mercado en tendencia ascendente? ¿O sólo rumores?</h2>
+        </element>
+        <a tabindex="0" href="news.html" role="button" aria-label="Acceder a noticias relacionadas con el mercado"
+          class="btn btn-large white black-text waves-effect waves-grey">Leer</a>
+      </div>
+    </div>
   </div>
 
   <hr>
@@ -104,11 +95,13 @@
         </div>
         <div class="card-stacked">
           <div class="card-content">
-            <h2>
-              Presentamos nueva criptomoneda: RubyCoins
-            </h2>
-            <p class="inicio-text">Tras meses de negociaciones y cosnultas con las entidades de la industria,
-              ¡sacamos nuestra propia criptomoneda!</p>
+            <element tabindex="0">
+              <h2>
+                Presentamos nueva criptomoneda: RubyCoins
+              </h2>
+              <p class="inicio-text">Tras meses de negociaciones y cosnultas con las entidades de la industria,
+                ¡sacamos nuestra propia criptomoneda!</p>
+            </element>
           </div>
           <div class="card-action">
             <a href="#" aria-label="Rubycoins, enlace a compra">Enlace a la compra</a>
@@ -124,14 +117,16 @@
         </div>
         <div class="card-stacked">
           <div class="card-content">
-            <h2>
-              Promoción exclusiva
-            </h2>
-            <p class="inicio-text">
-              Paquete de NFTs de última generación de mano de
-              <a href="#">@WillyrexYT</a>
-              . ¡Compra, antes de que se acaben!
-            </p>
+            <element tabindex="0">
+              <h2>
+                Promoción exclusiva
+              </h2>
+              <p class="inicio-text">
+                Paquete de NFTs de última generación de mano de
+                <a href="#">@WillyrexYT</a>
+                . ¡Compra, antes de que se acaben!
+              </p>
+            </element>
           </div>
           <div class="card-action">
             <a href="#" aria-label="Promoción exclusiva Willyrex, enlace a compra">Enlace a la compra</a>
@@ -147,13 +142,15 @@
         </div>
         <div class="card-stacked">
           <div class="card-content">
-            <h2>
-              ¿Necesitas ayuda?
-            </h2>
-            <p class="inicio-text">
-              Si tienes alguna duda del sobre la compra o venta de artículos y Tokens,
-              puedes recibir atención de cualquiera de nuestros expertos.
-            </p>
+            <element tabindex="0">
+              <h2>
+                ¿Necesitas ayuda?
+              </h2>
+              <p class="inicio-text">
+                Si tienes alguna duda del sobre la compra o venta de artículos y Tokens,
+                puedes recibir atención de cualquiera de nuestros expertos.
+              </p>
+            </element>
           </div>
           <div class="card-action">
             <a href="#" aria-label="Enlace a ticket de atención del cliente">Ticket de atención al cliente</a>
@@ -175,51 +172,50 @@
   <div class="container center-align" aria-label="Últimos items vendidos">
     <div class="row">
       <div class="col s12 m12 l12">
-        <table role="table">
-          <caption>Últimos items vendidos </caption>
-          <thead>
+        <table class="centered striped">
+          <thead tabindex="0">
             <tr>
-              <th scope="col">User</th>
-              <th scope="col">Item Name</th>
-              <th scope="col">Item Price</th>
+              <th>Usuarios</th>
+              <th>Objetos</th>
+              <th>Precios</th>
             </tr>
           </thead>
 
           <tbody>
-            <tr>
-              <td>RamonGamer</td>
-              <td>Karambit</td>
-              <td>$250.50</td>
+            <tr tabindex="0" role="row">
+              <td role="cell">RamonGamer</td>
+              <td role="cell">Karambit</td>
+              <td role="cell">$250.50</td>
             </tr>
-            <tr>
-              <td>Alan23</td>
-              <td>Five-SeveN Orange Peel</td>
-              <td>$10.76</td>
+            <tr tabindex="0" role="row">
+              <td role="cell">Alan23</td>
+              <td role="cell">Five-SeveN Orange Peel</td>
+              <td role="cell">$10.76</td>
             </tr>
-            <tr>
-              <td>Ezel</td>
-              <td>VariCamo Industrial Grade</td>
-              <td>$180.00</td>
+            <tr tabindex="0" role="row">
+              <td role="cell">Ezel</td>
+              <td role="cell">VariCamo Industrial Grade</td>
+              <td role="cell">$180.00</td>
             </tr>
-            <tr>
-              <td>Jonath</td>
-              <td>Neon Revolution</td>
-              <td>$12.00</td>
+            <tr tabindex="0" role="row">
+              <td role="cell">Jonath</td>
+              <td role="cell">Neon Revolution</td>
+              <td role="cell">$12.00</td>
             </tr>
-            <tr>
-              <td>Miguel</td>
-              <td>Elite Build</td>
-              <td>$27.62</td>
+            <tr tabindex="0" role="row">
+              <td role="cell">Miguel</td>
+              <td role="cell">Elite Build</td>
+              <td role="cell">$27.62</td>
             </tr>
-            <tr>
-              <td>Vrocoli</td>
-              <td>Lux Elementalista</td>
-              <td>$20.00</td>
+            <tr tabindex="0" role="row">
+              <td role="cell">Vrocoli</td>
+              <td role="cell">Lux Elementalista</td>
+              <td role="cell">$20.00</td>
             </tr>
           </tbody>
         </table>
 
-        <a class="btn waves-effect waves-light red lighten-1" role="button" href="#">Mirar más ventas</a>
+        <a class="btn waves-effect waves-light red lighten-1" role="button" href="analytics.html">Mirar más ventas</a>
       </div>
     </div>
   </div>
@@ -237,14 +233,16 @@
     <div class="col s12 m3 l3">
       <div class="card">
         <div class="card-image">
-          <img class="responsive-img" id="profile" src="./images/ape1.JPG" alt="ape1" aria-labelledby="apes"
+          <img  class="responsive-img" id="profile" src="./images/ape1.JPG" alt="ape1" aria-labelledby="apes"
             aria-describedby="description_apes">
         </div>
         <div class="card-stacked">
           <div class="card-content">
-            <h2 id="apes">Bored Apes</h2>
-            <p class="inicio-text" id="description_apes">Yuga Labs es la empresa matriz de Bored Ape Yacht Club.
-              Visionarios del sector.</p>
+            <element tabindex="0">
+              <h2 id="apes">Bored Apes</h2>
+              <p class="inicio-text" id="description_apes">Yuga Labs es la empresa matriz de Bored Ape Yacht Club.
+                Visionarios del sector.</p>
+            </element>
           </div>
           <div class="card-action">
             <a href="#" aria-label="Monos boreados, cómo unirme">Cómo unirme</a>
@@ -261,9 +259,11 @@
         </div>
         <div class="card-stacked">
           <div class="card-content">
-            <h2 id="golems" aria-label="Monos aburridos">Rude Golems</h2>
-            <p class="inicio-text" id="description_golems">Rude Golems es una propiedad intelectual. Son figuras de
-              Golem.</p>
+            <element tabindex="0">
+              <h2 id="golems" aria-label="Monos aburridos">Rude Golems</h2>
+              <p class="inicio-text" id="description_golems">Rude Golems es una propiedad intelectual. Son figuras de
+                Golem.</p>
+            </element>
           </div>
           <div class="card-action">
             <a href="#" aria-label="Golems rudos, cómo unirme">Cómo unirme</a>
@@ -280,9 +280,11 @@
         </div>
         <div class="card-stacked">
           <div class="card-content">
-            <h2 id="lions">Lazy Lions</h2>
-            <p class="inicio-text" id="description_lions">Comunidad NFT de leones únicos. Uno de los clubes más famosos
-            </p>
+            <element tabindex="0">
+              <h2 id="lions">Lazy Lions</h2>
+              <p class="inicio-text" id="description_lions">Comunidad NFT de leones únicos. Uno de los clubes más famosos
+              </p>
+            </element>
           </div>
           <div class="card-action">
             <a href="#" aria-label="Leones lacios, cómo unirme">Cómo unirme</a>
@@ -299,9 +301,11 @@
         </div>
         <div class="card-stacked">
           <div class="card-content">
-            <h2 id="criptopunk">CryptoPunks</h2>
-            <p class="inicio-text" id="description_criptopunk">Uno de los primeros tokens no fungibles en la blockchain
-              de Ethereum.</p>
+            <element tabindex="0">
+              <h2 id="criptopunk">CryptoPunks</h2>
+              <p class="inicio-text" id="description_criptopunk">Uno de los primeros tokens no fungibles en la blockchain
+                de Ethereum.</p>
+            </element>
           </div>
           <div class="card-action">
             <a href="#" aria-label="Cripto punkis, cómo unirme">Cómo unirme</a>
@@ -365,9 +369,9 @@
       var elems = document.querySelectorAll('.sidenav');
       var instances = M.Sidenav.init(elems);
     });
-
-    $(document).ready(function () {
-      $('.parallax').parallax();
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.parallax');
+      var instances = M.Parallax.init(elems);
     });
 
 
