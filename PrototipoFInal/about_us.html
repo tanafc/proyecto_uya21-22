@@ -15,44 +15,47 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
     <link href="./css/about_us.css" rel="stylesheet">
     <title>Ruby Contacto</title>
 </head>
 <body>
-      <!--Barra de navegación-->
-      <header>
-        <div class="navbar-fixed">
-            <nav role>
-              <div class="nav-wrapper red lighten-1">
-                <a href="./index.html" class="brand-logo">
-                  <i class="material-icons">code</i>
-                  Ruby's Crypto
-                </a>
-    
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger" target="_self"><i class="material-icons">menu</i></a>
-    
-                <!--Barra de navegación PC-->
-                <ul class="right hide-on-med-and-down" role="navigation">
-                  <li><a href="./monedero.html">Monedero Electrónico</a></li>
-                  <li><a href="./news.html">Noticias</a></li>
-                  <li><a href="#">Monedas</a></li>
-                  <li><a href="#">Tokens</a></li>
-                  <li><a href="#">Leverage Bancario</a></li>
-                  <li><a href="./register.html">Registrarse</a></li>
-                  <li><a href="./contacto.html" class="btn white black-text waves-effect waves-blue-grey lighten-1" role="button" aria-label="Sobre Nosotros">Sobre nosotros</a></li>  <!--Agregamos elemnto a la tabulacion + role + label-->
-                </ul>
-              </div>
-          </nav>
-        </div>
-        <div>
-          <!--Barra de navegación Móvil-->
-          <ul id="mobile-demo" class="sidenav" tabindex="-1">
-              <li><a aria-expanded="false" tabindex="-1" target="_self" href="./monedero.html">Monedero Electrónico</a></li>
-              <li><a aria-expanded="false" tabindex="-1" target="_self" href="./news.html">Noticias</a></li>
-              <li tabindex="0"><a aria-expanded="false" tabindex="-1" target="_self" href="./contacto.html" class="btn black white-text waves-effect waves-blue-grey lighten-1" role="button" aria-label="Sobre Nosotros">Sobre nosotros</a></li>
-          </ul>
-        </div>
-        </header>
+    <!--Barra de navegación-->
+    <header>
+      <div class="navbar-fixed">
+          <nav role>
+            <div class="nav-wrapper red lighten-1">
+              <a href="./index.html" class="brand-logo">
+                <i class="material-icons">code</i>
+                Ruby's Crypto
+              </a>
+
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger" target="_self"><i class="material-icons">menu</i></a>
+
+              <!--Barra de navegación PC-->
+              <ul class="right hide-on-med-and-down" role="navigation">
+                <li><a href="./wallet.html">Monedero Electrónico</a></li>
+                <li><a href="./news.html">Noticias</a></li>
+                <li><a href="./market.html">Mercado</a></li>
+                <li><a href="./analytics.html">Analíticas</a></li>
+                <li><a href="./register.html">Registrarse</a></li>
+                <li><a href="./about_us.html" class="btn white black-text waves-effect waves-blue-grey lighten-1" role="button" aria-label="Sobre Nosotros">Sobre nosotros</a></li>  <!--Agregamos elemnto a la tabulacion + role + label-->
+              </ul>
+            </div>
+        </nav>
+      </div>
+      <div>
+        <!--Barra de navegación Móvil-->
+        <ul id="mobile-demo" class="sidenav" tabindex="-1">
+            <li><a aria-expanded="false" tabindex="-1" target="_self" href="./wallet.html">Monedero Electrónico</a></li>
+            <li><a aria-expanded="false" tabindex="-1" target="_self" href="./news.html">Noticias</a></li>
+            <li><a aria-expanded="false" tabindex="-1" target="_self" href="./market.html">Mercado</a></li>
+            <li><a aria-expanded="false" tabindex="-1" target="_self" href="./analytics.html">Analíticas</a></li>
+            <li><a aria-expanded="false" tabindex="-1" target="_self" href="./register.html">Registrarse</a></li>
+            <li tabindex="0"><a aria-expanded="false" tabindex="-1" target="_self" href="./about_us.html" class="btn black white-text waves-effect waves-blue-grey lighten-1" role="button" aria-label="Sobre Nosotros">Sobre nosotros</a></li>
+        </ul>
+      </div>
+    </header>
 
     <main>
     <!-- Breadcrumbs -->
@@ -70,18 +73,28 @@
     </div>
 
     <!-- Contenido -->
-      <div class="container about_us">
+      <div class="container about_us teal lighten-4">
           <div class="row">
             <div class="col s12 m12 l6 teal lighten-4">
-              <element tabindex="11">
-                <h4 class="purple-text text-darken-3 center" id="description">Descripción de la aplicación</h4>
+              <element tabindex="0">
+                <h4 class="blue-text text-darken-3 center" id="description">Descripción de la aplicación</h4>
               </element>
-              <element tabindex="12">
+              <element tabindex="0">
                 <h5>¿Quiénes somos?</h5>
                 <p>Somos el grupo 3 de la asignatura de Usabilidad y Accesibilidad y hemos realizado un prototipo con el objetivo
                     de vender CryptoPunks.</p>
               </element>
-              <element tabindex="13">
+              <element tabindex="0">
+                <h5>¿Cuál es nuestro propósito?</h5>
+                <p id="description-purpose">La web esta enfocada a la posibilidad de venta, puja y búsqueda de información sobre
+                  <strong>criptomoneda</strong></p>
+              </element>
+              <element tabindex="0">
+                <h5>¿?</h5>
+                <p id="description-purpose">La web esta enfocada a la posibilidad de venta, puja y búsqueda de información sobre
+                  <strong>criptomoneda</strong></p>
+              </element>
+              <element tabindex="0">
                 <h5>¿Cuál es nuestro propósito?</h5>
                 <p id="description-purpose">La web esta enfocada a la posibilidad de venta, puja y búsqueda de información sobre
                   <strong>criptomoneda</strong></p>
@@ -89,35 +102,35 @@
             </div>
 
             <div class="col s12 m12 l6 center">
-              <element tabindex="14">
-                <h4 class="purple-text text-darken-3" id="description">Componentes del grupo</h4>
+              <element tabindex="0">
+                <h4 class="blue-text text-darken-3" id="description">Componentes del grupo</h4>
                 <p class="center">Estos son los participantes del desarrollo del proyecto:</p>
               </element>
               <table class="centered striped">
-                <thead tabindex="15">
+                <thead tabindex="0">
                   <tr>
-                    <th class="purple-text text-darken-3, highlight">Nombre y apellidos</th>
-                    <th class="purple-text text-darken-3, highlight">Correo electrónico</th>
-                    <th class="purple-text text-darken-3, highlight">Imagen de perfil</th>
+                    <th class="blue-text text-darken-3, highlight">Nombre y apellidos</th>
+                    <th class="blue-text text-darken-3, highlight">Correo electrónico</th>
+                    <th class="blue-text text-darken-3, highlight">Imagen de perfil</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr tabindex="16" role="row">
+                  <tr tabindex="0" role="row">
                     <td role="cell">Joseph Gabino Rodríguez</td>
                     <td role="cell">alu0101329161</td>
                     <td><img class="responsive-img" src="images/nft5.png" alt="Foto de perfil de Joseph" width="30" height="30"></td>
                   </tr>
-                  <tr tabindex="17" role="row">
+                  <tr tabindex="0" role="row">
                     <td role="cell">Vlatko Jesús Marchán Sekulic</td>
                     <td role="cell">alu0101321141</td>
                     <td role="cell"><img class="responsive-img" src="./images/ape1.JPG" alt="Foto de perfil de Vlatko" width="30" height="30"></td>
                   </tr>
-                  <tr tabindex="18" role="row">
+                  <tr tabindex="0" role="row">
                     <td role="cell">Tanausú Falcón Casanova</td>
                     <td role="cell">alu0101320878</td>
                     <td role="cell"><img class="responsive-img" src="./images/nft2.png" alt="Foto de perfil de Tanausú" width="30" height="30"></td>
                   </tr>
-                  <tr tabindex="19" role="row">
+                  <tr tabindex="0" role="row">
                     <td role="cell">Ian Vera Labrin</td>
                     <td role="cell">alu0101333946</td>
                     <td role="cell"><img class="responsive-img" src="./images/lions1.jpg" alt="Foto de perfil de Ian" width="30" height="40"></td>
@@ -130,43 +143,43 @@
     <main>
 
     <!-- Footer -->
-    <footer class="page-footer red lighten-2">
+    <footer class="page-footer red lighten-1">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m7 l6 center-align">
+            <h5 class="teal-text text-lighten-5" tabindex="0"><b>Colaboradores</b></h5>
+            <ul>
+              <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Joseph Gabino Rodríguez</a></li>
+              <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Vlatko Jesús Marchán Sekulic</a></li>
+              <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Tanausú Falcón Casanova</a></li>
+              <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="0">Ian Vera Labrin</a></li>
+            </ul>
+          </div>
+          <div class="col s12 m5 l4 center-align">
+            <h5 class="teal-text text-lighten-5" tabindex="25"><b>Redes sociales</b></h5>
+            <div class="social-container center">
+              <a href="https://www.facebook.com/universidaddelalaguna" target="_blank" tabindex="0" aria-label="Link para compartir en Facebook"><i class="fab fa-facebook-square" ></i></a>
+              <a href="https://twitter.com/ULL" tabindex="0" target="_blank" aria-label="Link para compartir en Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com/ULL" tabindex="0"  target="_blank" aria-label="Link para compartir en Twitter"><i class="fab fa-twitter" ></i></a>
+              <a href="https://www.linkedin.com/school/universidad-de-la-laguna" tabindex="0" target="_blank" aria-label="Link para compartir en youtube"><i class="fab fa-youtube" ></i></a>
+            </div>
+          </div>      
+        </div>
+      </div>
+      <div class="footer-copyright teal-text text-lighten-4">
         <div class="container">
-          <div class="row">
-            <div class="col s12 m7 l6">
-              <h5 class="teal-text text-lighten-4" tabindex="20"><b>Footer</b></h5>
-              <ul>
-                <li><a class="grey-text text-lighten-4" href="" target="_blank" tabindex="21">Joseph Gabino Rodríguez</a></li>
-                <li><a class="grey-text text-lighten-4" href="" target="_blank" tabindex="22">Vlatko Jesús Marchán Sekulic</a></li>
-                <li><a class="grey-text text-lighten-4" href="" target="_blank" tabindex="23">Tanausú Falcón Casanova</a></li>
-                <li><a class="grey-text text-lighten-4" href="" target="_blank" tabindex="24">Ian Vera Labrin</a></li>
-              </ul>
+          <div class="row"> 
+            <div class="col s12 m5 l5 center-align" tabindex="0">
+              © 2022 Copyright
             </div>
-            <div class="col s12 m5 l4 offset-l2">
-              <h5 class="teal-text text-lighten-4" tabindex="25"><b>Redes sociales</b></h5>
-              <div class="social-container center">
-                <a href="https://www.facebook.com/universidaddelalaguna" target="_blank" tabindex="26" aria-label="Link para compartir en Facebook"><i class="fab fa-facebook-square" ></i></a>
-                <a href="https://twitter.com/ULL" tabindex="27" target="_blank" aria-label="Link para compartir en Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com/ULL" tabindex="28"  target="_blank" aria-label="Link para compartir en Twitter"><i class="fab fa-twitter" ></i></a>
-                <a href="https://www.linkedin.com/school/universidad-de-la-laguna" tabindex="29" target="_blank" aria-label="Link para compartir en youtube"><i class="fab fa-youtube" ></i></a>
-              </div>
-            </div>      
-          </div>
-        </div>
-        <div class="footer-copyright teal-text text-lighten-4">
-          <div class="container">
-            <div class="row"> 
-              <div class="col s12 m5 l5" tabindex="32">
-                © 2022 Copyright
-              </div>
-              <div class="col s12 m7 l7">
-                <a class="teal-text text-lighten-4" href="./accessibility.html" target="_self" tabindex="33">Accesibilidad</a>
-                <a class="right teal-text text-lighten-4" href="./web_map.html" target="_self" tabindex="34">Mapa web</a>
-              </div>
+            <div class="col s12 m7 l7">
+              <a class="teal-text text-lighten-5" href="./accessibility.html" target="_self" tabindex="0">Accesibilidad</a>
+              <a class="right teal-text text-lighten-5" href="./web_map.html" target="_self" tabindex="0">Mapa web</a>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
 
       <!--  Menu Movil-->
       <script>
