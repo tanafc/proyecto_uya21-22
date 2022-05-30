@@ -401,10 +401,10 @@ Highcharts.chart('containerLeft', {
     type: 'pie'
   },
   title: {
-    text: 'Prporción de transacciones en página, último mes'
+    text: 'Proporción de transacciones en página, último mes'
   },
   subtitle: {
-    text: 'Fuente: <a href="google.com" target="_blank">gráficas.com</a>'
+    text: 'Fuente: <a href="google.com" target="_blank">RubyCrypto.com</a>'
   },
   plotOptions: {
     pie: {
@@ -451,10 +451,10 @@ Highcharts.chart('containerRight', {
       type: 'pie'
     },
     title: {
-      text: 'Browser market share, January, 2018'
+      text: 'Proporción de transacciones en página, último mes'
     },
     subtitle: {
-      text: 'Source: <a href="http://statcounter.com" target="_blank">statcounter.com</a>'
+      text: 'Fuente: <a href="google.com" target="_blank">RubyCrypto.com</a>'
     },
     plotOptions: {
       pie: {
@@ -466,7 +466,7 @@ Highcharts.chart('containerRight', {
       valueSuffix: '%'
     },
     series: [{
-      name: 'Browsers',
+      name: 'Exchanges realizados',
       data: versionsData,
       size: '100%',
       innerSize: '60%',
