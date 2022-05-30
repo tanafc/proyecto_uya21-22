@@ -94,3 +94,20 @@ blockquote h1 {
     font-size: 2.5em;
 }
 
+footer {
+    min-height: 70px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#191919', endColorStr='#000000');
+    border-top: 1px solid rgba(50, 50, 50, 0.3);
+    width: 100%;
+    position: fixed;
+    bottom: 0;              /* NUEVO */
+  }
+
+  @media screen and (max-with: 450px) {
+    main {
+        padding-bottom: 0;
+    }
+    footer {
+        margin-top: auto;
+    }
+  }

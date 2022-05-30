@@ -76,3 +76,9 @@ hr {
 
     border-top: 45px solid rgba(0, 0, 0, 0.1);
 }
+
+@media screen and (max-width: 950px) {
+    .fixed-action-btn {
+        margin-bottom: 40px;
+    }
+}
