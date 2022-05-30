@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .social-container{
     width: 100%;
     height: 100px;
