@@ -1,5 +1,4 @@
-
-img{
+img {
   object-fit: cover;
   object-position: center;
   width: 100%;
@@ -8,22 +7,28 @@ img{
 
 
 .chartWithMarkerOverlay {
-    position: relative;
-    width: 700px;
+  position: relative;
+  width: 700px;
 }
+
 .overlay-text {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: 50px;   /* chartArea top  */
-    left: 200px; /* chartArea left */
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50px;
+  /* chartArea top  */
+  left: 200px;
+  /* chartArea left */
 }
+
 .overlay-marker {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 53px;   /* chartArea top */
-    left: 528px; /* chartArea left */
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 53px;
+  /* chartArea top */
+  left: 528px;
+  /* chartArea left */
 }
 
 
@@ -83,26 +88,25 @@ img{
 
 
 .container2 {
-    height: 50em;
-    justify-content: center;
-  }
-  
+  height: 50em;
+  justify-content: center;
+}
+
 
 
 #container4 {
-    height: 40em;
-    width: 80%;
-    margin: auto;
-    justify-content: center !important;
-    align-items: center;
+  height: 40em;
+  width: 80%;
+  margin: auto;
+  justify-content: center !important;
+  align-items: center;
 
-  }
+}
 
 
-  
 
-#Donuts{
-    height: 50em;
-    justify-content: left;
-  }
 
+#Donuts {
+  height: 50em;
+  justify-content: left;
+}

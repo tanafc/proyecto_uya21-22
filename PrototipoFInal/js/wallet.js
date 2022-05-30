@@ -1,6 +1,6 @@
 function clasifyPrice(coin) {
-    if(coin == "Cardano" || coin == "cardano" || coin == "ADA") {
-        return 1.2 
+    if (coin == "Cardano" || coin == "cardano" || coin == "ADA") {
+        return 1.2
     } else if (coin == "Bitcoin" || coin == "Bitcoin" || coin == "BTC") {
         return 27368.36
     } else {
@@ -24,7 +24,7 @@ $(document).ready(function () {
         return false
     });
 
-    
+
     // Obtenemos los datos pasados al programa y los guardamos en un objeto.
     $("#Añadir-Moneda").submit(function () {
         let flag = false;
@@ -34,7 +34,7 @@ $(document).ready(function () {
         let antiguoExchange = $('#antiguo-exchange').val();
         let nombreMoneda = $('#Nombre-moneda').val();
         let cantidad = $('#Cantidad').val();
-        if (cantidad != '' && correo != '' && nombre != '' &&  antiguoExchange != '' &&  nombreMoneda != '') {
+        if (cantidad != '' && correo != '' && nombre != '' && antiguoExchange != '' && nombreMoneda != '') {
             flag = true;
         }
         const objeto = {

@@ -11,8 +11,8 @@ import {
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
- // Your web app's Firebase configuration
- const firebaseConfig = {
+// Your web app's Firebase configuration
+const firebaseConfig = {
   apiKey: "AIzaSyBm1MbDMCo-sx0LFX9LpadcRkyAtcscKR4",
   authDomain: "proyecto-web-uya-4b07e.firebaseapp.com",
   projectId: "proyecto-web-uya-4b07e",
@@ -27,16 +27,16 @@ export const db = getFirestore();
 
 export const saveUserData = (name, surname, email, year, location) => {
   console.log(name, surname, email, year, location);
-  if(validacionTexto() & validacionEmail()) {
-  addDoc(collection(db, 'users'), {
-    name: name,
-    surname: surname,
-    email: email,
-    date_birth: year,
-    place_birth: location
-  });
+  if (validacionTexto() & validacionEmail()) {
+    addDoc(collection(db, 'users'), {
+      name: name,
+      surname: surname,
+      email: email,
+      date_birth: year,
+      place_birth: location
+    });
   } else {
-    console.log("Datos erroneos: Solicitud denegada")  
+    console.log("Datos erroneos: Solicitud denegada")
   }
 }
 
