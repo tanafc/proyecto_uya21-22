@@ -79,13 +79,7 @@
 
   
   <div class="parallax-container">
-    <div class="parallax"><img src="./images/cripto1.png"></div>
-  </div>
-  <div class="section white">
-    <div class="row container">
-      <h2 class="header">Noticias</h2>
-      <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-    </div>
+    <div class="parallax"><img src="images/cripto1.png"></div>
   </div>
 
   <hr>
@@ -102,7 +96,7 @@
               <h2 >
                 Presentamos nueva criptomoneda: RubyCoins 
               </h2>
-              <p >Tras meses de negociaciones y cosnultas con las entidades de la industria, 
+              <p class="inicio-text" >Tras meses de negociaciones y cosnultas con las entidades de la industria, 
                 ¡sacamos nuestra propia criptomoneda!</p>
             </div>
             <div class="card-action">
@@ -122,7 +116,7 @@
               <h2 >
                 Promoción exclusiva
               </h2>
-              <p >
+              <p class="inicio-text">
                 Paquete de NFTs de última generación de mano de 
                 <a href="#">@WillyrexYT</a>
                 . ¡Compra, antes de que se acaben!
@@ -145,7 +139,7 @@
               <h2 >
                 ¿Necesitas ayuda?
               </h2>
-              <p >
+              <p class="inicio-text">
                 Si tienes alguna duda del sobre la compra o venta de artículos y Tokens,
                  puedes recibir atención de cualquiera de nuestros expertos.
               </p>
@@ -170,7 +164,7 @@
     <div  class="container center-align" aria-label="Últimos items vendidos">
       <div class="row">
         <div class="col s12 m12 l12">
-          <table role="table">  <!--role-->
+          <table role="table">
             <caption>Últimos items vendidos </caption>
             <thead>
               <tr>
@@ -237,7 +231,7 @@
           <div class="card-stacked">
             <div class="card-content">
               <h2 id="apes" >Bored Apes</h2>
-              <p id="description_apes">Yuga Labs es la empresa matriz de Bored Ape Yacht Club. Visionarios del sector.</p>
+              <p class="inicio-text" id="description_apes">Yuga Labs es la empresa matriz de Bored Ape Yacht Club. Visionarios del sector.</p>
             </div>
             <div class="card-action">
               <a href="#" aria-label="Monos boreados, cómo unirme">Cómo unirme</a>
@@ -254,7 +248,7 @@
           <div class="card-stacked">
             <div class="card-content">
               <h2 id="golems" aria-label="Monos aburridos">Rude Golems</h2>
-              <p id="description_golems">Rude Golems es una propiedad intelectual. Son figuras de Golem.</p>
+              <p class="inicio-text" id="description_golems">Rude Golems es una propiedad intelectual. Son figuras de Golem.</p>
             </div>
             <div class="card-action">
               <a href="#" aria-label="Golems rudos, cómo unirme">Cómo unirme</a>
@@ -271,7 +265,7 @@
           <div class="card-stacked">
             <div class="card-content">
               <h2 id="lions">Lazy Lions</h2>
-              <p id="description_lions">Comunidad NFT de leones únicos. Uno de los clubes más famosos</p>
+              <p class="inicio-text" id="description_lions">Comunidad NFT de leones únicos. Uno de los clubes más famosos</p>
             </div>
             <div class="card-action">
               <a href="#" aria-label="Leones lacios, cómo unirme">Cómo unirme</a>
@@ -288,7 +282,7 @@
           <div class="card-stacked">
             <div class="card-content">
               <h2 id="criptopunk">CryptoPunks</h2>
-              <p id="description_criptopunk">Uno de los primeros tokens no fungibles en la blockchain de Ethereum.</p>
+              <p class="inicio-text" id="description_criptopunk">Uno de los primeros tokens no fungibles en la blockchain de Ethereum.</p>
             </div>
             <div class="card-action">
               <a href="#" aria-label="Cripto punkis, cómo unirme">Cómo unirme</a>
@@ -339,15 +333,17 @@
     
     <!--Script menu movil + slider + carrousel-->
     <script>
+
     document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.sidenav');
       var instances = M.Sidenav.init(elems);
     });
 
-    document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.parallax');
-    var instances = M.Parallax.init(elems, options);
+    $(document).ready(function(){
+    $('.parallax').parallax();
   });
+
+
 
     document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.fixed-action-btn');
@@ -358,6 +354,9 @@
      <script src="https://kit.fontawesome.com/35db202371.js" crossorigin="anonymous"></script>
       <!--JavaScript at end of body for optimized loading-->
       <script src="./js/index.js"></script>
+
+      <!--jQuery-->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
     </body>
   </html>
         
