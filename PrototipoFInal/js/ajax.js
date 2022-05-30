@@ -8,7 +8,7 @@ console.log("Hola")
         data = Object.fromEntries(
             new FormData(e.target )
         )
-        // alert(JSON.stringify(data))
+        alert(JSON.stringify(data))
         console.table(data)
         realizarPost();
         } else {
