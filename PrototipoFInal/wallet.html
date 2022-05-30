@@ -21,40 +21,55 @@
 <body>
 
     <!--Barra de navegación-->
-    <div class="navbar-fixed">
-        <nav role>
-            <div class="nav-wrapper red lighten-1">
-                <a href="./index.html" class="brand-logo">
-                    <i class="material-icons">code</i>
-                    Ruby's Crypto
-                </a>
+    <header>
+        <div class="navbar-fixed">
+            <nav role>
+                <div class="nav-wrapper red lighten-1">
+                    <a href="./index.html" class="brand-logo">
+                        <i class="material-icons">code</i>
+                        Ruby's Crypto
+                    </a>
 
-                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger" target="_self"><i
+                            class="material-icons">menu</i></a>
 
-                <!--Barra de navegación PC-->
-                <ul class="right hide-on-med-and-down" role="navigation">
-                    <li><a href="./wallet.html">Monedero Electrónico</a></li>
-                    <li><a href="./news.html">Noticias</a></li>
-                    <li><a href="#">Monedas</a></li>
-                    <li><a href="#">Tokens</a></li>
-                    <li><a href="#">Leverage Bancario</a></li>
-                    <li><a href="./register.html">Registrarse</a></li>
-                    <li><a href="#" class="btn white black-text waves-effect waves-blue-grey lighten-1" role="button"
-                            aria-label="Sobre Nosotros">Sobre nosotros</a></li>
-                    <!--Agregamos elemnto a la tabulacion + role + label-->
-                </ul>
+                    <!--Barra de navegación PC-->
+                    <ul class="right hide-on-med-and-down" role="navigation">
+                        <li><a href="./wallet.html">Monedero Electrónico</a></li>
+                        <li><a href="./news.html">Noticias</a></li>
+                        <li><a href="./market.html">Mercado</a></li>
+                        <li><a href="./analytics.html">Analíticas</a></li>
+                        <li><a href="./register.html">Registrarse</a></li>
+                        <li><a href="./about_us.html"
+                                class="btn white black-text waves-effect waves-blue-grey lighten-1" role="button"
+                                aria-label="Sobre Nosotros">Sobre nosotros</a></li>
+                        <!--Agregamos elemnto a la tabulacion + role + label-->
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div>
+            <!--Barra de navegación Móvil-->
+            <ul id="mobile-demo" class="sidenav" tabindex="-1">
+                <li><a aria-expanded="false" tabindex="-1" target="_self" href="./wallet.html">Monedero Electrónico</a>
+                </li>
+                <li><a aria-expanded="false" tabindex="-1" target="_self" href="./news.html">Noticias</a></li>
+                <li><a aria-expanded="false" tabindex="-1" target="_self" href="./market.html">Mercado</a></li>
+                <li><a aria-expanded="false" tabindex="-1" target="_self" href="./analytics.html">Analíticas</a></li>
+                <li><a aria-expanded="false" tabindex="-1" target="_self" href="./register.html">Registrarse</a></li>
+                <li tabindex="0"><a aria-expanded="false" tabindex="-1" target="_self" href="./about_us.html"
+                        class="btn black white-text waves-effect waves-blue-grey lighten-1" role="button"
+                        aria-label="Sobre Nosotros">Sobre nosotros</a></li>
+            </ul>
+        </div>
+    </header>
 
-                <!--Barra de navegación Móvil-->
-                <ul id="nav-mobile" class="sidenav">
-                    <li><a href="./wallet.html">Monedero Electrónico</a></li>
-                    <li><a href="#">Noticias</a></li>
-                    <li><a href="#">Monedas</a></li>
-                    <li><a href="#">Leverage Bancario</a></li>
-                    <li tabindex="0"><a href="#" class="btn black white-text waves-effect waves-blue-grey lighten-1"
-                            role="button" aria-label="Sobre Nosotros">Sobre nosotros</a></li>
-                </ul>
-            </div>
-        </nav>
+    <!--Boton de accesibilidad-->
+    <div class="fixed-action-btn">
+        <a href="#" class="btn-floating btn-large grey darken-3 pulse">
+            <i tabindex="1" role="button" class="large material-icons">arrow_upward</i>
+            <!--role + index-->
+        </a>
     </div>
 
     <!-- Breadcrumbs -->
@@ -96,7 +111,7 @@
                                         <th>precio mercado (Euros)</th>
                                     </tr>
                                 </thead>
-                                <tbody id = "tBody">
+                                <tbody id="tBody">
                                 </tbody>
                             </table>
                         </div>
@@ -143,7 +158,7 @@
                             </div>
                             <div class="center-align">
                                 <button class="btn waves-effect waves-light" type="submit" name="action"> Añadir Moneda
-                                  <i class="material-icons right">send</i>
+                                    <i class="material-icons right">send</i>
                                 </button>
                             </div>
                         </form>
@@ -156,40 +171,44 @@
 
 
 
-
-
-
-
-
-
-
-
-
-    <!--Boton de accesibilidad-->
-    <div class="fixed-action-btn">
-        <a href="#" class="btn-floating btn-large red pulse">
-            <i tabindex="0" role="button" class="large material-icons">arrow_upward</i>
-            <!--role + index-->
-        </a>
-    </div>
-
-    <!--Pie de pagina-->
+    <!-- Footer -->
     <footer class="page-footer red lighten-1">
-        <div class="social-container center">
-            <a href="#" aria-label="Link para compartir en Facebook"><i class="fab fa-facebook-square"></i></a>
-            <a href="#" aria-label="Link para compartir en Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="Link para compartir en Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="Link para compartir en youtube"><i class="fab fa-youtube"></i></a>
-        </div>
-        <div class="footer-copyright">
-            <div class="container center footer-text"
-                aria-label="Copyright 2022 Una colaboración de Joseph Gabino, Ian Vera, Tanausú Falcón y Vlatko Marchán">
-                © 2022 Copyright <br>
-                Una colaboración de Joseph Gabino, Ian Vera, Tanausú Falcón y Vlatko Marchán
-                <a class="grey-text text-lighten-4 right" href="#!">About us</a>
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m7 l6 center-align">
+              <h5 class="teal-text text-lighten-5" tabindex="20"><b>Colaboradores</b></h5>
+              <ul>
+                <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="21">Joseph Gabino Rodríguez</a></li>
+                <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="22">Vlatko Jesús Marchán Sekulic</a></li>
+                <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="23">Tanausú Falcón Casanova</a></li>
+                <li><a class="grey-text text-lighten-5" href="" target="_blank" tabindex="24">Ian Vera Labrin</a></li>
+              </ul>
             </div>
+            <div class="col s12 m5 l4 center-align">
+              <h5 class="teal-text text-lighten-5" tabindex="25"><b>Redes sociales</b></h5>
+              <div class="social-container center">
+                <a href="https://www.facebook.com/universidaddelalaguna" target="_blank" tabindex="26" aria-label="Link para compartir en Facebook"><i class="fab fa-facebook-square" ></i></a>
+                <a href="https://twitter.com/ULL" tabindex="27" target="_blank" aria-label="Link para compartir en Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/ULL" tabindex="28"  target="_blank" aria-label="Link para compartir en Twitter"><i class="fab fa-twitter" ></i></a>
+                <a href="https://www.linkedin.com/school/universidad-de-la-laguna" tabindex="29" target="_blank" aria-label="Link para compartir en youtube"><i class="fab fa-youtube" ></i></a>
+              </div>
+            </div>      
+          </div>
         </div>
-    </footer>
+        <div class="footer-copyright teal-text text-lighten-4">
+          <div class="container">
+            <div class="row"> 
+              <div class="col s12 m5 l5 center-align" tabindex="32">
+                © 2022 Copyright
+              </div>
+              <div class="col s12 m7 l7">
+                <a class="teal-text text-lighten-5" href="./accessibility.html" target="_self" tabindex="33">Accesibilidad</a>
+                <a class="right teal-text text-lighten-5" href="./web_map.html" target="_self" tabindex="34">Mapa web</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
 
     <!--Script menu movil + slider + carrousel-->
     <script>
