@@ -186,76 +186,181 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var colors = Highcharts.getOptions().colors,
   categories = [
-    'Chrome',
-    'Firefox',
-    'Internet Explorer',
-    'Safari',
-    'Edge',
-    'Opera',
-    'Other'
+    'Bitcoin',
+    'Ethereum',
+    'Tether ',
+    'Dogecoin',
+    'Moon',
+    'Cardano',
+    'Otros'
   ],
   data = [
     {
       y: 62.74,
       color: colors[2],
       drilldown: {
-        name: 'Chrome',
-        categories: [],
-        data: []
+        name: 'Bitcoin',
+        categories: [
+          'Bitcoin a Ethereum',
+          'Bitcoin a Tether',
+          'Bitcoin a Dogecoin',
+          'Bitcoin a Moon',
+          'Bitcoin a Cardano',
+          'Bitcoin a Otros',
+        ],
+        data: [
+          45,
+          10,
+          1,
+          1,
+          0.74,
+          5,
+          
+        ]
       }
     },
     {
       y: 10.57,
       color: colors[1],
       drilldown: {
-        name: 'Firefox',
-        categories: [],
-        data: []
+        name: 'Ethereum',
+        categories: [
+          'Ethereum a Bitcoin',
+          'Ethereum a Tether',
+          'Ethereum a Dogecoin',
+          'Ethereum a Moon',
+          'Ethereum a Cardano',
+          'Ethereum a Otros',
+        ],
+        data: [
+          5,
+          3,
+          0.5,
+          0.5,
+          0.5,
+          1.07,
+          
+        ]
       }
     },
     {
       y: 7.23,
       color: colors[0],
       drilldown: {
-        name: 'Internet Explorer',
-        categories: [],
-        data: []
+        name: 'Tether',
+        categories: [
+          'Tether a Bitcoin',
+          'Tether a Ethereum',
+          'Tether a Dogecoin',
+          'Tether a Moon',
+          'Tether a Cardano',
+          'Tether a Otros',
+        ],
+        data: [
+          3,
+          2,
+          0.5,
+          0.5,
+          0.5,
+          0.73,
+          
+        ]
       }
     },
     {
       y: 5.58,
       color: colors[3],
       drilldown: {
-        name: 'Safari',
-        categories: [],
-        data: []
+        name: 'Dogecoin',
+        categories: [
+          'Dogecoin a Bitcoin',
+          'Dogecoin a Ethereum',
+          'Dogecoin a Tether',
+          'Dogecoin a Moon',
+          'Dogecoin a Cardano',
+          'Dogecoin a Otros',
+        ],
+        data: [
+          2,
+          1,
+          0.5,
+          0.5,
+          0.5,
+          1.08,
+          
+        ]
       }
     },
     {
       y: 4.02,
       color: colors[5],
       drilldown: {
-        name: 'Edge',
-        categories: [],
-        data: []
+        name: 'Moon',
+        categories: [
+          'Moon a Bitcoin',
+          'Moon a Ethereum',
+          'Moon a Tether',
+          'Moon a Dogecoin',
+          'Moon a Cardano',
+          'Moon a Otros',
+        ],
+        data: [
+          1,
+          1,
+          0.5,
+          0.5,
+          0.5,
+          0.52,
+          
+        ]
       }
     },
     {
       y: 1.92,
       color: colors[4],
       drilldown: {
-        name: 'Opera',
-        categories: [],
-        data: []
+        name: 'Cardano',
+        categories: [
+          'Cardano a Bitcoin',
+          'Cardano a Ethereum',
+          'Cardano a Tether',
+          'Cardano a Dogecoin',
+          'Cardano a Moon',
+          'Cardano a Otros',
+        ],
+        data: [
+          0.5,
+          0.5,
+          0.2,
+          0.2,
+          0.2,
+          0.32,
+          
+        ]
       }
     },
     {
       y: 7.62,
       color: colors[6],
       drilldown: {
-        name: 'Other',
-        categories: [],
-        data: []
+        name: 'Otros',
+        categories: [
+          'Otros a Bitcoin',
+          'Otros a Ethereum',
+          'Otros a Tether',
+          'Otros a Dogecoin',
+          'Otros a Moon',
+          'Otros a Cardano',
+        ],
+        data: [
+          3,
+          2,
+          0.5,
+          0.5,
+          0.5,
+          1.12,
+          
+        ]
       }
     }
   ],
@@ -296,10 +401,10 @@ Highcharts.chart('containerLeft', {
     type: 'pie'
   },
   title: {
-    text: 'Browser market share, January, 2018'
+    text: 'Prporción de transacciones en página, último mes'
   },
   subtitle: {
-    text: 'Source: <a href="http://statcounter.com" target="_blank">statcounter.com</a>'
+    text: 'Fuente: <a href="google.com" target="_blank">gráficas.com</a>'
   },
   plotOptions: {
     pie: {
@@ -311,7 +416,7 @@ Highcharts.chart('containerLeft', {
     valueSuffix: '%'
   },
   series: [{
-    name: 'Browsers',
+    name: 'Total comerciado',
     data: browserData,
     size: '100%',
     innerSize: '60%',
@@ -362,7 +467,7 @@ Highcharts.chart('containerRight', {
     },
     series: [{
       name: 'Browsers',
-      data: browserData,
+      data: versionsData,
       size: '100%',
       innerSize: '60%',
       dataLabels: {

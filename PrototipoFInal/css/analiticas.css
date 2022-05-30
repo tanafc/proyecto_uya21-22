@@ -1,0 +1,165 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+.social-container{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-container a{
+  color:#ffff;
+  font-size: 35px;
+  margin:0px 20px;
+}
+
+.slider .btn{
+  margin-top: 20px;
+  padding:0 50px;
+  border-radius: 10px;
+
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+font-size: inherit;
+}
+img{
+  object-fit: cover;
+  object-position: top;
+  width: 100px;
+}
+
+.carousel-slider{
+  height: 50em;
+}
+
+.card-panel {
+  opacity: 0.8;
+}
+
+.card img{
+  height: 30em;
+}
+
+.card h4{
+  font-size:2vw;
+}
+
+.card p{
+  font-size:1vw;
+}
+
+#sales-table{
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  p {
+      font-size: 200vw;
+  }
+}
+
+
+
+
+.chartWithMarkerOverlay {
+    position: relative;
+    width: 700px;
+}
+.overlay-text {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50px;   /* chartArea top  */
+    left: 200px; /* chartArea left */
+}
+.overlay-marker {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 53px;   /* chartArea top */
+    left: 528px; /* chartArea left */
+}
+
+
+
+
+
+
+
+.highcharts-figure,
+.highcharts-data-table table {
+  min-width: 10em;
+  max-width: 100%;
+  margin: 1em auto;
+}
+
+#container {
+  height: 480px;
+}
+
+.highcharts-data-table table {
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #ebebeb;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 50em;
+}
+
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.highcharts-data-table th {
+  font-weight: 600;
+  padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+  padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+  background: #f1f7ff;
+}
+
+
+
+
+.container2 {
+    height: 50em;
+    justify-content: center;
+  }
+  
+
+
+  #container4 {
+    height: 40em;
+    width: 100%;
+    justify-content: center;
+  }
+
+
+  
+
+#Donuts{
+    height: 50em;
+    justify-content: left;
+  }
+
