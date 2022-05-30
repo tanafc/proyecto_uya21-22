@@ -24,7 +24,7 @@
             <nav role>
               <div class="nav-wrapper red lighten-1">
                 <a href="./index.html" class="brand-logo">
-                  <i class="material-icons">code</i>
+                  <i class="material-icons" aria-hidden="true">code</i>
                   Ruby's Crypto
                 </a>
     
@@ -121,10 +121,10 @@
         </div>
       </div>
 
-      <!--Boton de accesibilidad-->
+      <!--Botón de accesibilidad-->
       <div class="fixed-action-btn">
-        <a href="#" class="btn-floating btn-large grey darken-3 pulse">
-          <i tabindex="1" role="button" class="large material-icons">arrow_upward</i> <!--role + index-->
+        <a href="#" class="btn-floating btn-large grey darken-3 pulse" role="button" aria-label="Subir arriba">
+          <i tabindex="1" role="button" class="large material-icons" aria-hidden="true">arrow_upward</i> <!--role + index-->
         </a>
       </div>
 
@@ -142,17 +142,17 @@
         <div class="col s12 m12 l12">
           <div class="card horizontal blue-grey darken-1">
             <div class="card-image">
-              <img src="./images/news/Willyrex.png" alt="Willyrex">
+              <img src="./images/news/Willyrex.png" alt="Willyrex" aria-labelledby="titulo-willy" aria-describedby="des-willy">
             </div>
             <div class="card-content white-text">
-              <h3 tabindex="0" class="news-title">Willyrex pierde toda su inversión en NFT</h3>
+              <h3 id="titulo-willy" tabindex="0" class="news-title">Willyrex pierde toda su inversión en NFT</h3>
               <div class="chip">
                 NFTs
               </div>
               <div class="chip">
                 Social
               </div>
-              <p tabindex="0" class="news-text">
+              <p id="des-willy" tabindex="0" class="news-text">
                 "Hace casi un año os dije que la mayoría de proyectos NFT se iban a ir a cero,
                 un 99 o 95%, prácticamente todos". Así ha comenzado Willyrex el vídeo en el que ha 
                 tratado de justificar a sus seguidores por qué sus Tokens No Fungibles han perdido todo su valor.
@@ -170,14 +170,14 @@
         <div class="col s12 m12 l12">
           <div class="card horizontal blue-grey darken-1">
             <div class="card-image">
-              <img src="./images/news/SethGreenStolenNFT.jpg" alt="Seth Green">
+              <img src="./images/news/SethGreenStolenNFT.jpg" alt="Seth Green" aria-labelledby="titulo-seth" aria-describedby="des-seth">
             </div>
             <div class="card-content white-text">
-              <h3 tabindex="0" class="news-title">Seth Green ya no puede realizar su show de NFTs</h3>
+              <h3 id="titulo-seth" tabindex="0" class="news-title">Seth Green ya no puede realizar su show de NFTs</h3>
               <div class="chip">
                 NFTs
               </div>
-              <p tabindex="0" class="news-text">
+              <p id="des-seth" tabindex="0" class="news-text">
                 Al actor y productor Seth Green le robaron varios NFT este mes después de sucumbir a una estafa de phishing que, 
                 sin darse cuenta, arruinó el plan de su nueva serie animada. El próximo programa se desarrolló a partir de personajes 
                 de la amplia colección NFT de Green.
@@ -194,17 +194,17 @@
         <div class="col s12 m12 l12">
           <div class="card horizontal blue-grey darken-1">
             <div class="card-image">
-              <img src="./images/news/NFTHero.jpg" alt="Glory Hero NFT Wars">
+              <img src="./images/news/NFTHero.jpg" alt="Glory Hero NFT Wars" aria-labelledby="titulo-hero" aria-describedby="des-hero">
             </div>
             <div class="card-content white-text">
-              <h3 tabindex="0" class="news-title">El juego de Glory Hero NFT Wars acusado de plagio</h3>
+              <h3 id="titulo-hero" tabindex="0" class="news-title">El juego de Glory Hero NFT Wars acusado de plagio</h3>
               <div class="chip">
                 Juegos
               </div>
               <div class="chip">
                 NFTs
               </div>
-              <p tabindex="0" class="news-text">
+              <p id="des-hero" tabindex="0" class="news-text">
                 Escándalo por el juego de Glory Hero NFT Wars y su parecido con el MOBA 
                 Paladins Strike desarrollado por Hi-Rez Studios. Niegan las acusaciones.
               </p>
@@ -220,14 +220,14 @@
         <div class="col s12 m12 l12">
           <div class="card horizontal blue-grey darken-1">
             <div class="card-image">
-              <img src="./images/news/SquareEnix.jpg" alt="Square Enix">
+              <img src="./images/news/SquareEnix.jpg" alt="Square Enix" aria-labelledby="titulo-squarenix" aria-describedby="des-squarenix">
             </div>
             <div class="card-content white-text">
-              <h3 tabindex="0" class="news-title">Square Enix invertirá los 300 millones dólares de Embracer en NFTs</h3>
+              <h3 id="titulo-squarenix" tabindex="0" class="news-title">Square Enix invertirá los 300 millones dólares de Embracer en NFTs</h3>
               <div class="chip">
                 Juegos
               </div>
-              <p tabindex="0" class="news-text">
+              <p id="des-squarenix" tabindex="0" class="news-text">
                 El otro lado del trato: qué va a hacer Square Enix con 300 millones de dólares. Según cuenta la propia 
                 compañía en el comunicado de la transacción, blockchain, avances en IA y experimentar con la nube.
               </p>
@@ -243,13 +243,13 @@
       <!--Paginación-->
       <div class="container center-align">
         <ul role="navigation" class="pagination">
-          <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+          <li class="disabled"><a href="#!" aria-label="Página previa"><i aria-hidden="true" class="material-icons">chevron_left</i></a></li>
           <li class="active"><a href="#!">1</a></li>
           <li class="waves-effect"><a href="#!">2</a></li>
           <li class="waves-effect"><a href="#!">3</a></li>
           <li class="waves-effect"><a href="#!">4</a></li>
           <li class="waves-effect"><a href="#!">5</a></li>
-          <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+          <li class="waves-effect"><a href="#!" aria-label="Siguiente página"><i aria-hidden="true" class="material-icons">chevron_right</i></a></li>
         </ul>
       </div>
 
@@ -278,7 +278,7 @@
               </div>
               <div class="center-align">
                 <button class="btn waves-effect waves-light" type="submit" name="action">Enviar Aporte
-                  <i class="material-icons right">send</i>
+                  <i aria-hidden="true" class="material-icons right">send</i>
                 </button>
               </div>
             </form>
@@ -298,7 +298,7 @@
               </div>
               <div class="center-align">
                 <button role="button" class="btn waves-effect waves-light" type="submit" name="action">Recibir noticias
-                  <i class="material-icons right">favorite_border</i>
+                  <i aria-hidden="true" class="material-icons right">favorite_border</i>
                 </button>
               </div>
             </form>
