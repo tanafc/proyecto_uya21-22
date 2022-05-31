@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     },
     title: {
-      text: 'Valor promedio mensual'
+      text: 'Valor promedio criptodivisas 2021'
     },
     subtitle: {
       text: 'Fuente: Bitcoin.com'
@@ -503,10 +503,10 @@ Highcharts.chart('container4', {
     type: 'column'
   },
   title: {
-    text: 'Monthly Average Rainfall'
+    text: 'Número de transacciones mensuales a nivel global'
   },
   subtitle: {
-    text: 'Source: WorldClimate.com'
+    text: 'Fuente: Scrimblo.eu.es'
   },
   xAxis: {
     categories: [
@@ -528,13 +528,13 @@ Highcharts.chart('container4', {
   yAxis: {
     min: 0,
     title: {
-      text: 'Rainfall (mm)'
+      text: 'Millones (USD)'
     }
   },
   tooltip: {
     headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
     pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-      '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+      '<td style="padding:0"><b>{point.y:.1f} USD</b></td></tr>',
     footerFormat: '</table>',
     shared: true,
     useHTML: true
