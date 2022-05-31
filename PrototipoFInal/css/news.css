@@ -39,3 +39,11 @@
 .input-field .prefix.active {
   color: orange;
 }
+
+th {
+  color: black;
+}
+
+td {
+  color: black;
+}
