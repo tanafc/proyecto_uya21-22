@@ -34,3 +34,8 @@
   font-size: 15px;
   color: black;
 }
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: orange;
+}

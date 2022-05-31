@@ -5,7 +5,6 @@ img {
 }
 
 
-
 .chartWithMarkerOverlay {
   position: relative;
   width: 700px;
@@ -32,9 +31,15 @@ img {
 }
 
 
+/* icon prefix color */
+.input-field {
+  color: white;
+}
 
-
-
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: orange;
+}
 
 
 .highcharts-figure,
@@ -111,10 +116,6 @@ img {
   align-items: center;
 
 }
-
-
-
-
 
 
 #Donuts {
