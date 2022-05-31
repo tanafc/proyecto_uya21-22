@@ -19,6 +19,11 @@ main {
     margin-top: 2em;
 }
 
+a.orange-text:hover{
+    text-decoration-color: white;
+    background-color: white;
+}
+
 main {
     padding-bottom: 4em;
     padding-top: 2em;
