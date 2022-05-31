@@ -57,3 +57,7 @@ p {
 html {
   scroll-behavior: smooth;
 }
+
+p {
+  color: black;
+}
