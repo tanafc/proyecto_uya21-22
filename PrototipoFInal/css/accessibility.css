@@ -1,3 +1,7 @@
+*{
+  text-align: justify;
+}
+
 body {
   font-family: Georgia;
 }
@@ -57,3 +61,8 @@ p {
 html {
   scroll-behavior: smooth;
 }
+
+p {
+  color: black;
+}
+
