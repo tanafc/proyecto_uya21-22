@@ -7,7 +7,7 @@ document.querySelector('form')
       data = Object.fromEntries(
         new FormData(e.target)
       )
-      alert(JSON.stringify(data))
+      // alert(JSON.stringify(data))
       console.table(data)
       realizarPost();
     } else {
@@ -36,33 +36,33 @@ function validacionTexto() {
     //alert('ERROR: El nombre solo puede contener letras.');
     document.getElementById("nombres").ariaLabel = "El nombre solo debe contener letras";
     document.getElementById("nombres").focus();
-    document.getElementById("errorNombre").className = "red-text text-darken-3";
+    document.getElementById("errorNombre").className = "white-text text-darken-3";
     document.getElementById("errorNombre").innerHTML = "El nombre solo debe contener letras";
     return false;
   } else {
-    document.getElementById("errorNombre").className = "green-text text-darken-3";
+    document.getElementById("errorNombre").className = "white-text text-darken-3";
     document.getElementById("errorNombre").innerHTML = "Nombre correcto";
   }
   if (valor1 == null || valor1.length == 0 || !/^[A-Z]+$/i.test(valor1)) {
     //alert('ERROR: El nombre solo puede contener letras.');
     document.getElementById("apellidos").ariaLabel = "Los apellidos solo deben contener letras";
     document.getElementById("apellidos").focus();
-    document.getElementById("errorApellido").className = "red-text text-darken-3";
+    document.getElementById("errorApellido").className = "white-text text-darken-3";
     document.getElementById("errorApellido").innerHTML = "El apellido solo debe contener letras";
     return false;
   } else {
-    document.getElementById("errorApellido").className = "green-text text-darken-3";
+    document.getElementById("errorApellido").className = "white-text text-darken-3";
     document.getElementById("errorApellido").innerHTML = "Apellido correcto";
   }
   if (valor3 == null || valor3.length == 0 || !/^[A-Z]+$/i.test(valor3)) {
     //alert('ERROR: El nombre solo puede contener letras.');
     document.getElementById("lugar_nacimiento").ariaLabel = "El lugar de nacimiento solo debe contener letras";
     document.getElementById("lugar_nacimiento").focus();
-    document.getElementById("errorNacimiento").className = "red-text text-darken-3";
+    document.getElementById("errorNacimiento").className = "white-text text-darken-3";
     document.getElementById("errorNacimiento").innerHTML = "El lugar de nacimiento solo puede contener letras";
     return false;
   } else {
-    document.getElementById("errorNacimiento").className = "green-text text-darken-3";
+    document.getElementById("errorNacimiento").className = "white-text text-darken-3";
     document.getElementById("errorNacimiento").innerHTML = "El lugar de nacimiento es correcto";
   }
   return true
@@ -73,11 +73,11 @@ function validacionEmail() {
   if (valor == null || valor.length == 0 || !/^[^@]+@[^@]+.[a-zA-Z]{2,}$/.test(valor)) {
     document.getElementById("correo").ariaLabel = "El formato del email es incorrecto, un ejemplo de sería anonimo@gmail.com";
     document.getElementById("correo").focus();
-    document.getElementById("errorCorreo").className = "red-text text-darken-3";
+    document.getElementById("errorCorreo").className = "white-text text-darken-3";
     document.getElementById("errorCorreo").innerHTML = "El formato de email es incorrecto";
     return false
   } else {
-    document.getElementById("errorCorreo").className = "green-text text-darken-3";
+    document.getElementById("errorCorreo").className = "white-text text-darken-3";
     document.getElementById("errorCorreo").innerHTML = "El correo es correcto";
   }
   return true;
