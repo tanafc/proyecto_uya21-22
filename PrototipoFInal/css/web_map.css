@@ -3,7 +3,7 @@ body {
 }
 
 main {
-    background-color: rgba(151, 247, 247, 0.397);
+    background-color: gray;
     padding-bottom: 4em;
     padding-top: 2em;
 }
