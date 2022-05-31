@@ -55,3 +55,19 @@ td {
 .input-field .prefix.active {
   color: orange;
 }
+
+#errorCorreo {
+  font-size: 15px;
+}
+
+#errorNacimiento{
+  font-size: 15px;
+}
+
+#errorNombre{
+  font-size: 15px;
+}
+
+#errorApellido{
+  font-size: 15px;
+}
