@@ -104,6 +104,17 @@ img {
 }
 
 
+#container_mail {
+  width: 90%;
+  margin: auto;
+  justify-content: center !important;
+  align-items: center;
+
+}
+
+
+
+
 
 
 #Donuts {

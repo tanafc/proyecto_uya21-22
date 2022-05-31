@@ -83,7 +83,7 @@
   <div class="row">
     <div class="col s6 m6 l6">
       <figure class="highcharts-figure">
-        <div id="containerLeft" aria-label="Gráfica con valores promedio mensuales de criptomonedas"></div>
+        <div id="containerLeft" aria-label="Gráfica con valores promedio diarios de criptomonedas"></div>
       </figure>
     </div>
 
@@ -101,9 +101,9 @@
 
 
 
-  <div class="container4">
+  <div class="container" id="container4">
     <figure class="highcharts-figure">
-      <div id="container4"></div>
+      <div id="container4" aria-label="Gráfica semanal de eventos"></div>
     </figure>
   </div>
 
@@ -122,17 +122,20 @@
           <div class="card-stacked">
             <div class="card-content">
               <h2 id="apes">Gráficos premium</h2>
-              <p class="inicio-text" id="description_apes">Reciba nuestros últimos informes y gráficos a través de una
+              <p class="inicio-text" id="description_Newsletter">Reciba nuestros últimos informes y gráficos a través de una
                 cómoda NewsLetter</p>
             </div>
-            <div class="input-field center-align">
-              <i class="material-icons prefix">mail</i>
-              <input id="Nombre-moneda" type="text" class="validate" aria-required="true"
-                aria-label="Nombre de la moneda">
-              <label for="Nombre-moneda">Correo electrónico</label>
+            <div class="container" id="container_mail">
+              <div class="input-field center-align">
+                <i class="material-icons prefix">mail</i>
+                <input id="mail_name" type="text" class="validate" aria-required="true"
+                  aria-label="Correo electrónico">
+                <label for="mail_name">Correo electrónico</label>
+              </div>
             </div>
-            <div class="card-action">
-              <a href="#" aria-label="Monos boreados, cómo unirme">Enviar</a>
+            
+            <div class="card-action" id="container_mail_button" >
+              <a href="#" aria-label="Boton de envio de formulario">Enviar</a>
             </div>
 
 
