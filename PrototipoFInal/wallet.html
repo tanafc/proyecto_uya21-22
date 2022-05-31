@@ -84,14 +84,16 @@
 
 
         <div class="wrap">
-            <ul class="ventanas" role="menu" >
-                <li role="button"><a href="#tab1"><span><i class="material-icons" aria-hidden="true">account_balance_wallet</i></span>
+            <ul class="ventanas" role="menu">
+                <li role="button"><a href="#tab1"><span><i class="material-icons"
+                                aria-hidden="true">account_balance_wallet</i></span>
                         <span class="tab-text">
                             <h3>Ver el monedero</h3>
                         </span>
                     </a>
                 </li>
-                <li role="button"><a href="#tab2"><span><i class="material-icons" aria-hidden="true">keyboard_arrow_down</i></span>
+                <li role="button"><a href="#tab2"><span><i class="material-icons"
+                                aria-hidden="true">keyboard_arrow_down</i></span>
                         <span class="tab-text">
                             <h3>Añadir al monedero</h3>
                         </span>
@@ -102,13 +104,13 @@
                 <article id="tab1">
                     <!--Mostrar divisas-->
                     <div class="tabladivisas" id="DivisasContainer">
-                        <blockquote tabindex="0">
+                        <blockquote tabindex="0" id="ActivosMonederoText">
                             <h4>Activos en el monedero:</h4>
                         </blockquote>
                         <div class="row">
                             <div class="divisas">
                                 <table class="striped" id="divisas-tabla">
-                                    <thead role = "navigation">
+                                    <thead role="navigation">
                                         <tr tabindex="0">
                                             <th>
                                                 <h5>Nombre cripto activo</h5>
@@ -138,9 +140,9 @@
                             <form id="Añadir-Moneda" onsubmit="return false">
                                 <div class="input-field center-align">
                                     <i class="material-icons prefix">email</i>
-                                    <input id="correo" type="email" class="validate" aria-required="true"
-                                        aria-label="Ingresar Email">
+                                    <input id="correo" name="correo" type="text" aria-label="Ingresar Email">
                                     <label for="correo">Email</label>
+                                    <p class="red-text text-darken-3" id="errorCorreo"></p>
                                 </div>
                                 <div class="input-field center-align">
                                     <i class="material-icons prefix">person_outline</i>
@@ -162,12 +164,13 @@
                                 </div>
                                 <div class="input-field center-align">
                                     <i class="material-icons prefix">attach_money</i>
-                                    <input id="Cantidad" type="number" class="validate" aria-required="true"
-                                        aria-label="Cantidad">
+                                    <input id="Cantidad" name="Cantidad" type="text" aria-label="Cantidad">
                                     <label for="Cantidad">Cantidad</label>
+                                    <p class="red-text text-darken-3" id="errorCantidad"></p>
                                 </div>
                                 <div class="center-align">
-                                    <button class="btn waves-effect waves-light" type="submit" name="action"> Añadir
+                                    <button class="btn waves-effect waves-light" type="submit"
+                                        onclick="validacionTiposBoton()"> Añadir
                                         Moneda
                                         <i class="material-icons right" aria-hidden="true">send</i>
                                     </button>
@@ -179,11 +182,6 @@
             </div>
         </div>
     </main>
-
-
-
-
-
 
 
 
@@ -236,8 +234,8 @@
                     <div class="col s12 m7 l7">
                         <a class="teal-text text-lighten-5" href="./accessibility.html" target="_self"
                             tabindex="0">Accesibilidad</a>
-                        <a class="right teal-text text-lighten-5" href="./web_map.html" target="_self"
-                            tabindex="0">Mapa web</a>
+                        <a class="right teal-text text-lighten-5" href="./web_map.html" target="_self" tabindex="0">Mapa
+                            web</a>
                     </div>
                 </div>
             </div>
