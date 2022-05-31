@@ -1,3 +1,7 @@
+*{
+  text-align: justify;
+}
+
 body {
   font-family: Georgia;
 }
@@ -61,3 +65,4 @@ html {
 p {
   color: black;
 }
+
