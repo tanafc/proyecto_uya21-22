@@ -92,31 +92,31 @@
         <!-- ROW -->
         <form method="post" id="registro">
           <div class="input-field col s12 m12 l6 x6">
-            <i aria-hidden="true" class="material-icons prefix white-text">account_circle</i>
+            <i aria-hidden="true" class="material-icons prefix">account_circle</i>
             <input class="white" type="text" name="nombres" id="nombres" aria-label="Nombre del usuario" required>
             <label for="nombres">Nombre</label>
             <p class="red-text text-darken-3" id="errorNombre"></p>
           </div>
           <div class="input-field col s12 m12 l6 x6">
-            <i aria-hidden="true" class="material-icons prefix white-text">account_circle</i>
+            <i aria-hidden="true" class="material-icons prefix">account_circle</i>
             <input class="white" type="text" name="apellidos" id="apellidos" aria-label="Apellido del usuario" required>
             <label for="apellidos">Apellidos</label>
             <p class="red-text text-darken-3" id="errorApellido"></p>
           </div>
           <div class="input-field col s12 m12 l6 x6">
-            <i aria-hidden="true" class="material-icons prefix white-text">date_range</i>
+            <i aria-hidden="true" class="material-icons prefix">date_range</i>
             <input class="white" id="fecha_nacimiento" type="text" class="datepicker">
             <label for="fecha_nacimiento">Fecha de nacimiento</label>
           </div>
           <div class="input-field col s12 m12 l6 x6">
-            <i aria-hidden="true" class="material-icons prefix white-text">directions</i>
+            <i aria-hidden="true" class="material-icons prefix">directions</i>
             <input class="white" type="text" name="lugar_nacimiento" id="lugar_nacimiento" aria-label="Lugar de nacimiento" required>
             <label for="lugar_nacimiento">Lugar de nacimiento</label>
             <p class="red-text text-darken-3" id="errorNacimiento"></p>
           </div>
       </div>
       <div class="input-field col s12 l12 m12 x12">
-        <i aria-hidden="true" class="center-align material-icons prefix white-text">email</i>
+        <i aria-hidden="true" class="center-align material-icons prefix">email</i>
         <input class="white" type="text" name="correo" id="correo" aria-label="Correo electrónico">
         <label for="correo">Correo</label>
         <p class="red-text text-darken-3" id="errorCorreo"></p>
@@ -132,15 +132,15 @@
     </div> <!-- CONTAINER -->
 
     <!--Mostrar usuarios-->
-    <div class=" center-align container grey darken-4" id="User-Container">
+    <div class="container grey darken-4 center-align" id="User-Container">
       <h2 tabindex="0">Usuarios registrados:</h2>
-      <div class="row center-align" aria-live="polite">
-        <div class="col s6 m6 l6">
-          <table role="table" class="striped" id="User-table">
+      <div class="row" aria-live="polite">
+        <div class="col s12 m12 l12">
+          <table role="table" class="center striped" id="User-table">
             <thead tabindex="0">
               <tr>
-                <th scope="col">Name</th>
-                <th scope="col">Email</th>
+                <th class="register-th" scope="col">Name</th>
+                <th class="register-th" scope="col">Email</th>
               </tr>
             </thead>
           </table>

@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', async function () {
       const user = doc.data();
       const newRowAmount = userTable.insertRow();
       newRowAmount.innerHTML = `
-        <td>${user.name}</td>
-        <td>${user.email}</td>
+        <td class="register-td">${user.name}</td>
+        <td class="register-td">${user.email}</td>
       `;
     });
   });

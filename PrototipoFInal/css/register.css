@@ -27,3 +27,31 @@
 .miga {
   margin-top: 20px;
 }
+
+th {
+  color: black;
+}
+
+td {
+  color: black;
+}
+
+.register-td {
+  color: white;
+  font-size: 18px;
+}
+
+.register-th {
+  color: orange;
+  font-size: 20px;
+}
+
+/* icon prefix color */
+.input-field {
+  color: white;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: orange;
+}
