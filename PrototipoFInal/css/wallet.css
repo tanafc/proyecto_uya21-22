@@ -5,6 +5,7 @@ body {
 }
 
 p {
+    color: black;
     font-size: 1.6em;
 }
 
@@ -28,7 +29,7 @@ ul.ventanas li {
 ul.ventanas li a {
     color: #fff;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 10px;
     text-align: center;
 
     display: block;
@@ -79,13 +80,39 @@ ul.ventanas li a .tab-text {
     }
 }
 
-
 .divisas {
     width: 90%;
     max-width: 95%;
     margin: 30px auto;
 }
 
-blockquote h1 {
-    font-size: 2.5em;
+blockquote h4 {
+    color: black;
+    font-size: 2em;
+}
+
+h3 {
+    color: white;
+    font-size: 1.6em;
+}
+
+h4{
+    color: black;
+    font-size: 1.6em;
+}
+
+h5 {
+    color: black;
+    font-size: 1.6em;
+}
+
+p{
+    color: black;
+}
+
+th {
+    color: black;
+}
+td {
+    color: black;
 }
