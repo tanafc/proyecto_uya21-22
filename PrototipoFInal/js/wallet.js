@@ -1,7 +1,7 @@
 function clasifyPrice(coin) {
     if (coin == "Cardano" || coin == "cardano" || coin == "ADA") {
         return 1.2
-    } else if (coin == "Bitcoin" || coin == "Bitcoin" || coin == "BTC") {
+    } else if (coin == "Bitcoin" || coin == "bitcoin" || coin == "BTC") {
         return 27368.36
     } else {
         return "No disponible"
