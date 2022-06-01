@@ -35,6 +35,14 @@
   color: black;
 }
 
+#form-label {
+  color: black;
+}
+
+.pag-link {
+  color: black !important;
+}
+
 /* icon prefix focus color */
 .input-field .prefix.active {
   color: orange;

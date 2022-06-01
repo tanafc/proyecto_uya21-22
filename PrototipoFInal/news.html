@@ -119,11 +119,11 @@
         <div class="section">
           <div class="input-field">
             <input id="date-from" type="text" class="datepicker" aria-describedby="formato-fecha">
-            <label for="date-from">Fecha desde la que buscar</label>
+            <label id="form-label" for="date-from">Fecha desde la que buscar</label>
           </div>
           <div class="input-field">
             <input id="date-to" type="text" class="datepicker" aria-describedby="formato-fecha">
-            <label for="date-to" >Fecha hasta la que buscar</label>
+            <label id="form-label" for="date-to" >Fecha hasta la que buscar</label>
           </div>
           <p id="formato-fecha">Formato dd/mm/yyyy</p>
         </div>
@@ -282,17 +282,19 @@
 
   <!--Paginación-->
   <div class="container center-align">
-    <ul role="navigation" class="pagination">
-      <li class="disabled" role="button"><a href="#!" aria-label="Página previa"><i aria-hidden="true"
-            class="material-icons">chevron_left</i></a></li>
-      <li class="active orange" role="button"><a href="#!">1</a></li>
-      <li class="waves-effect" role="button"><a href="#!">2</a></li>
-      <li class="waves-effect" role="button"><a href="#!">3</a></li>
-      <li class="waves-effect" role="button"><a href="#!">4</a></li>
-      <li class="waves-effect" role="button"><a href="#!">5</a></li>
-      <li class="waves-effect" role="button"><a href="#!" aria-label="Siguiente página"><i aria-hidden="true"
-            class="material-icons">chevron_right</i></a></li>
-    </ul>
+    <div class="row">
+      <ul role="navigation" class="pagination">
+        <li class="disabled" role="button"><a href="#" aria-label="Página previa"><i aria-hidden="true"
+              class="material-icons grey lighten-4">chevron_left</i></a></li>
+        <li class="active white" role="button"><a class="pag-link" href="#">1</a></li>
+        <li class="waves-effect" role="button"><a class="pag-link" href="#">2</a></li>
+        <li class="waves-effect" role="button"><a class="pag-link" href="#">3</a></li>
+        <li class="waves-effect" role="button"><a class="pag-link" href="#">4</a></li>
+        <li class="waves-effect" role="button"><a class="pag-link" href="#">5</a></li>
+        <li class="waves-effect" role="button"><a href="#" aria-label="Siguiente página"><i aria-hidden="true"
+              class="material-icons grey lighten-4">chevron_right</i></a></li>
+      </ul>
+    </div>
   </div>
 
 
@@ -307,22 +309,22 @@
           <div class="input-field center-align">
             <i class="material-icons prefix">email</i>
             <input id="email-colab" type="email" class="validate white" aria-required="true" aria-label="Ingresar Email">
-            <label for="email-colab"> Email</label>
+            <label id="form-label" for="email-colab"> Email</label>
           </div>
           <div class="input-field center-align">
             <i class="material-icons prefix">create</i>
             <input id="input_title" type="text" class="validate white" data-length="50" aria-required="true"
               aria-label="Ingresar tema">
-            <label for="input_title"> Tema de la noticia</label>
+            <label id="form-label" for="input_title"> Tema de la noticia</label>
           </div>
           <div class="input-field center-align">
             <i class="material-icons prefix">content_paste</i>
             <input id="input_description" type="text" class="validate white" data-length="300" aria-required="true"
               aria-label="Ingresar descripción">
-            <label for="input_description"> Descripción de la noticia</label>
+            <label id="form-label" for="input_description"> Descripción de la noticia</label>
           </div>
           <div class="center-align">
-            <button class="btn waves-effect orange" type="submit" name="action">Enviar Aporte
+            <button class="btn waves-effect blue-grey darken-1" type="submit" name="action">Enviar Aporte
               <i aria-hidden="true" class="material-icons right">send</i>
             </button>
           </div>
@@ -339,10 +341,10 @@
           <div class="input-field center-align">
             <i class="material-icons prefix">email</i>
             <input id="email-news" type="email" class="validate white" aria-required="true" aria-label="Ingresar Email">
-            <label for="email-news"> Email</label>
+            <label id="form-label" for="email-news"> Email</label>
           </div>
           <div class="center-align">
-            <button role="button" class="btn orange" type="submit" name="action">Recibir noticias
+            <button role="button" class="btn blue-grey darken-1" type="submit" name="action">Recibir noticias
               <i aria-hidden="true" class="material-icons right">favorite_border</i>
             </button>
           </div>
