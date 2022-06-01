@@ -122,3 +122,14 @@ img {
   height: 50em;
   justify-content: left;
 }
+
+
+.inicio-text {
+  font-size: 1em !important;
+}
+
+@media only screen and (max-width: 400px) {
+  h1, h2, h3, h4, h5, h6 {
+      font-size: 2em !important;
+  }
+}
