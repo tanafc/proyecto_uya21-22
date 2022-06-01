@@ -58,7 +58,7 @@ ul.ventanas li a .tab-text {
     text-align: justify;
 }
 
-@media screen and (max-with: 700px) {
+@media only screen and (max-width: 700px) {
     ul.ventanas li {
         width: none;
         flex-basis: 0;
@@ -66,13 +66,11 @@ ul.ventanas li a .tab-text {
     }
 }
 
-@media screen and (max-with: 450px) {
-    ul.ventanas li a {
-        padding: 15px 0px;
-    }
+@media only screen and (max-width: 450px) {
 
     ul.ventanas li a .tab-text {
-        display: none;
+        display: none !important;
+        visibility: hidden !important;
     }
 
     .secciones article {
@@ -80,6 +78,30 @@ ul.ventanas li a .tab-text {
     }
 }
 
+@media only screen and (max-width: 400px) {
+    .secciones article {
+        padding: 10px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1em !important;
+    }
+    blockquote h4 {
+        color: black;
+        font-size: 1em !important;
+    }
+}
+@media only screen and (max-width: 256px) {
+    .secciones article {
+        padding: 10px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 0.8em !important;
+    }
+    blockquote h4 {
+        color: black;
+        font-size: 0.8em !important;
+    }
+}
 .divisas {
     width: 90%;
     max-width: 95%;
