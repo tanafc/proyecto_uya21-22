@@ -20,55 +20,48 @@
 <body>
 
   <!--Barra de navegación-->
-  <div class="navbar-fixed">
-    <nav role>
-      <div class="nav-wrapper grey darken-4">
-        <a href="./index.html" class="brand-logo">
-          <i class="material-icons" aria-hidden="true">code</i>
-          Ruby's Crypto
-        </a>
+  <header>
+    <div class="navbar-fixed">
+        <nav role>
+            <div class="nav-wrapper grey darken-4">
+                <a tabindex="0" href="./index.html" class="brand-logo">
+                    <i class="material-icons" aria-hidden="true">code</i>
+                    Ruby's Crypto
+                </a>
 
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <a href="javascript:;" data-target="mobile-demo" class="sidenav-trigger" target="_self"><i
+                        class="material-icons">menu</i></a>
 
-        <!--Barra de navegación PC-->
-        <ul class="right hide-on-med-and-down" role="navigation">
-          <li><a href="./wallet.html">Monedero Electrónico</a></li>
-          <li><a href="./news.html">Noticias</a></li>
-          <li><a href="./market.html">Mercado</a></li>
-          <li><a href="./analytics.html">Analíticas</a></li>
-          <li><a href="./register.html">Registrarse</a></li>
-          <li><a href="./about_us.html" class="btn white black-text waves-effect waves-blue-grey lighten-1"
-              role="button" aria-label="Sobre Nosotros">Sobre nosotros</a></li>
-          <!--Agregamos elemnto a la tabulacion + role + label-->
-        </ul>
-
-        <!--Barra de navegación Móvil-->
-        <ul tabindex="-1" id="nav-mobile" class="sidenav">
-          <li><a aria-expanded="false" tabindex="-1" target="_self" href="./wallet.html">Monedero Electrónico</a></li>
-          <li><a aria-expanded="false" tabindex="-1" target="_self" href="./news.html">Noticias</a></li>
-          <li><a aria-expanded="false" tabindex="-1" target="_self" href="./market.html">Mercado</a></li>
-          <li><a aria-expanded="false" tabindex="-1" target="_self" href="./analytics.html">Analíticas</a></li>
-          <li><a aria-expanded="false" tabindex="-1" target="_self" href="./register.html">Registrarse</a></li>
-          <li><a aria-expanded="false" tabindex="-1" target="_self" href="./about_us.html"
-              class="btn black white-text waves-effect waves-blue-grey lighten-1" role="button"
-              aria-label="Sobre Nosotros">Sobre nosotros</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-<!--Barra de navegación Móvil-->
-      <ul id="mobile-demo" class="sidenav" tabindex="-1">
-        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./wallet.html">Monedero Electrónico</a></li>
-        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./news.html">Noticias</a></li>
-        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./market.html">Mercado</a></li>
-        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./analytics.html">Analíticas</a></li>
-        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./register.html">Registrarse</a></li>
-        <li><a aria-expanded="false" tabindex="-1" target="_self" href="./about_us.html"
-            class="btn black white-text waves-effect waves-blue-grey lighten-1" role="button"
-            aria-label="Sobre Nosotros">Sobre nosotros</a></li>
-      </ul>
+                <!--Barra de navegación PC-->
+                <ul class="right hide-on-med-and-down" role="navigation">
+                    <li><a href="./wallet.html">Monedero Electrónico</a></li>
+                    <li><a href="./news.html">Noticias</a></li>
+                    <li><a href="./market.html">Mercado</a></li>
+                    <li><a href="./analytics.html">Analíticas</a></li>
+                    <li><a href="./register.html">Registrarse</a></li>
+                    <li><a href="./about_us.html"
+                            class="btn white black-text waves-effect waves-blue-grey lighten-1" role="button"
+                            aria-label="Sobre Nosotros">Sobre nosotros</a></li>
+                    <!--Agregamos elemnto a la tabulacion + role + label-->
+                </ul>
+            </div>
+        </nav>
     </div>
-  </header>
+    <div>
+        <!--Barra de navegación Móvil-->
+        <ul id="mobile-demo" class="sidenav" tabindex="-1">
+            <li><a aria-expanded="false" tabindex="-1" target="_self" href="./wallet.html">Monedero Electrónico</a>
+            </li>
+            <li><a aria-expanded="false" tabindex="-1" target="_self" href="./news.html">Noticias</a></li>
+            <li><a aria-expanded="false" tabindex="-1" target="_self" href="./market.html">Mercado</a></li>
+            <li><a aria-expanded="false" tabindex="-1" target="_self" href="./analytics.html">Analíticas</a></li>
+            <li><a aria-expanded="false" tabindex="-1" target="_self" href="./register.html">Registrarse</a></li>
+            <li><a aria-expanded="false" tabindex="-1" target="_self" href="./about_us.html"
+                    class="btn black white-text waves-effect waves-blue-grey lighten-1" role="button"
+                    aria-label="Sobre Nosotros">Sobre nosotros</a></li>
+        </ul>
+    </div>
+</header>
 
 <!-- Breadcrumbs -->
 <div class="container">
@@ -145,7 +138,8 @@
           <div class="card-stacked">
             <div class="card-content">
               <h2 id="premium" tabindex="0">Gráficos premium</h2>
-              <p class="inicio-text" id="description_Newsletter" alt="Newsletter de gráficas" tabindex="0">Reciba nuestros últimos informes y gráficos a través de una
+              <p class="inicio-text" id="description_Newsletter" alt="Newsletter de gráficas" tabindex="0">
+                Reciba nuestros últimos informes y gráficos a través de una
                 cómoda NewsLetter</p>
             </div>
             <div class="container" id="container_mail">
@@ -234,10 +228,17 @@
   <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
   <script>
+
     document.addEventListener('DOMContentLoaded', function () {
       var elems = document.querySelectorAll('.sidenav');
       var instances = M.Sidenav.init(elems);
     });
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.parallax');
+      var instances = M.Parallax.init(elems);
+    });
+
+
 
     document.addEventListener('DOMContentLoaded', function () {
       var elems = document.querySelectorAll('.fixed-action-btn');
