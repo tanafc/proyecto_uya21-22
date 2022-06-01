@@ -25,7 +25,10 @@ main {
 
 main li {
   font-size: 18px;
-  margin-left: 20px;
+  margin-left: 25px;
+  width: 90%;
+  max-width: 95%;
+  margin: 35px auto;
 }
 
 .bullet::before {
@@ -41,6 +44,10 @@ main li {
 p {
   font-size: 18px;
   text-align: justify;
+  display: block;
+  width: 95%;
+  max-width: 100%;
+  margin: 30px auto;
 }
 
 
@@ -64,4 +71,10 @@ html {
 
 p {
   color: black;
+}
+
+.row {
+  width: 90%;
+  max-width: 80%;
+  margin: 30px auto;
 }
